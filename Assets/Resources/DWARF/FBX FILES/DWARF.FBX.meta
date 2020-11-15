@@ -1,0 +1,1302 @@
+fileFormatVersion: 2
+guid: 40f547c53c05a694eb5988af3159a666
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: BEARD_A
+  - first:
+      1: 100002
+    second: BEARD_B
+  - first:
+      1: 100004
+    second: BEARD_C
+  - first:
+      1: 100006
+    second: BEARD_D
+  - first:
+      1: 100008
+    second: BEARD_E
+  - first:
+      1: 100010
+    second: BODY_ARMOR
+  - first:
+      1: 100012
+    second: //RootNode
+  - first:
+      1: 100014
+    second: DWARF
+  - first:
+      1: 100016
+    second: DWARF_
+  - first:
+      1: 100018
+    second: DWARF_ Head
+  - first:
+      1: 100020
+    second: DWARF_ HeadNub
+  - first:
+      1: 100022
+    second: DWARF_ L Calf
+  - first:
+      1: 100024
+    second: DWARF_ L Clavicle
+  - first:
+      1: 100026
+    second: DWARF_ L Finger0
+  - first:
+      1: 100028
+    second: DWARF_ L Finger01
+  - first:
+      1: 100030
+    second: DWARF_ L Finger02
+  - first:
+      1: 100032
+    second: DWARF_ L Finger0Nub
+  - first:
+      1: 100034
+    second: DWARF_ L Finger1
+  - first:
+      1: 100036
+    second: DWARF_ L Finger11
+  - first:
+      1: 100038
+    second: DWARF_ L Finger12
+  - first:
+      1: 100040
+    second: DWARF_ L Finger1Nub
+  - first:
+      1: 100042
+    second: DWARF_ L Finger2
+  - first:
+      1: 100044
+    second: DWARF_ L Finger21
+  - first:
+      1: 100046
+    second: DWARF_ L Finger22
+  - first:
+      1: 100048
+    second: DWARF_ L Finger2Nub
+  - first:
+      1: 100050
+    second: DWARF_ L Finger3
+  - first:
+      1: 100052
+    second: DWARF_ L Finger31
+  - first:
+      1: 100054
+    second: DWARF_ L Finger32
+  - first:
+      1: 100056
+    second: DWARF_ L Finger3Nub
+  - first:
+      1: 100058
+    second: DWARF_ L Finger4
+  - first:
+      1: 100060
+    second: DWARF_ L Finger41
+  - first:
+      1: 100062
+    second: DWARF_ L Finger42
+  - first:
+      1: 100064
+    second: DWARF_ L Finger4Nub
+  - first:
+      1: 100066
+    second: DWARF_ L Foot
+  - first:
+      1: 100068
+    second: DWARF_ L Forearm
+  - first:
+      1: 100070
+    second: DWARF_ L Hand
+  - first:
+      1: 100072
+    second: DWARF_ L Thigh
+  - first:
+      1: 100074
+    second: DWARF_ L Toe0
+  - first:
+      1: 100076
+    second: DWARF_ L Toe0Nub
+  - first:
+      1: 100078
+    second: DWARF_ L UpperArm
+  - first:
+      1: 100080
+    second: DWARF_ Neck
+  - first:
+      1: 100082
+    second: DWARF_ Pelvis
+  - first:
+      1: 100084
+    second: DWARF_ Queue de cheval 1
+  - first:
+      1: 100086
+    second: DWARF_ Queue de cheval 1Nub
+  - first:
+      1: 100088
+    second: DWARF_ Queue de cheval 2
+  - first:
+      1: 100090
+    second: DWARF_ Queue de cheval 21
+  - first:
+      1: 100092
+    second: DWARF_ Queue de cheval 22
+  - first:
+      1: 100094
+    second: DWARF_ Queue de cheval 23
+  - first:
+      1: 100096
+    second: DWARF_ Queue de cheval 24
+  - first:
+      1: 100098
+    second: DWARF_ Queue de cheval 25
+  - first:
+      1: 100100
+    second: DWARF_ Queue de cheval 2Nub
+  - first:
+      1: 100102
+    second: DWARF_ R Calf
+  - first:
+      1: 100104
+    second: DWARF_ R Clavicle
+  - first:
+      1: 100106
+    second: DWARF_ R Finger0
+  - first:
+      1: 100108
+    second: DWARF_ R Finger01
+  - first:
+      1: 100110
+    second: DWARF_ R Finger02
+  - first:
+      1: 100112
+    second: DWARF_ R Finger0Nub
+  - first:
+      1: 100114
+    second: DWARF_ R Finger1
+  - first:
+      1: 100116
+    second: DWARF_ R Finger11
+  - first:
+      1: 100118
+    second: DWARF_ R Finger12
+  - first:
+      1: 100120
+    second: DWARF_ R Finger1Nub
+  - first:
+      1: 100122
+    second: DWARF_ R Finger2
+  - first:
+      1: 100124
+    second: DWARF_ R Finger21
+  - first:
+      1: 100126
+    second: DWARF_ R Finger22
+  - first:
+      1: 100128
+    second: DWARF_ R Finger2Nub
+  - first:
+      1: 100130
+    second: DWARF_ R Finger3
+  - first:
+      1: 100132
+    second: DWARF_ R Finger31
+  - first:
+      1: 100134
+    second: DWARF_ R Finger32
+  - first:
+      1: 100136
+    second: DWARF_ R Finger3Nub
+  - first:
+      1: 100138
+    second: DWARF_ R Finger4
+  - first:
+      1: 100140
+    second: DWARF_ R Finger41
+  - first:
+      1: 100142
+    second: DWARF_ R Finger42
+  - first:
+      1: 100144
+    second: DWARF_ R Finger4Nub
+  - first:
+      1: 100146
+    second: DWARF_ R Foot
+  - first:
+      1: 100148
+    second: DWARF_ R Forearm
+  - first:
+      1: 100150
+    second: DWARF_ R Hand
+  - first:
+      1: 100152
+    second: DWARF_ R Thigh
+  - first:
+      1: 100154
+    second: DWARF_ R Toe0
+  - first:
+      1: 100156
+    second: DWARF_ R Toe0Nub
+  - first:
+      1: 100158
+    second: DWARF_ R UpperArm
+  - first:
+      1: 100160
+    second: DWARF_ Spine
+  - first:
+      1: 100162
+    second: DWARF_ Spine1
+  - first:
+      1: 100164
+    second: FOREARM_ARMOR_L
+  - first:
+      1: 100166
+    second: FOREARM_ARMOR_R
+  - first:
+      1: 100168
+    second: HAIRCUT_A
+  - first:
+      1: 100170
+    second: HAIRCUT_B
+  - first:
+      1: 100172
+    second: HAIRCUT_C
+  - first:
+      1: 100174
+    second: HAIRCUT_D
+  - first:
+      1: 100176
+    second: HAIRCUT_E
+  - first:
+      1: 100178
+    second: HAIRCUT_F
+  - first:
+      1: 100180
+    second: HAIRCUT_G
+  - first:
+      1: 100182
+    second: HELMET_A
+  - first:
+      1: 100184
+    second: HELMET_A_1
+  - first:
+      1: 100186
+    second: HELMET_A_2
+  - first:
+      1: 100188
+    second: HELMET_A_3
+  - first:
+      1: 100190
+    second: HELMET_B
+  - first:
+      1: 100192
+    second: HELMET_B_1
+  - first:
+      1: 100194
+    second: HELMET_B_2
+  - first:
+      1: 100196
+    second: HELMET_B_3
+  - first:
+      1: 100198
+    second: HELMET_C
+  - first:
+      1: 100200
+    second: HELMET_C_1
+  - first:
+      1: 100202
+    second: HELMET_C_2
+  - first:
+      1: 100204
+    second: HELMET_C_3
+  - first:
+      1: 100206
+    second: MACE
+  - first:
+      1: 100208
+    second: ONE_HANDED_AXE
+  - first:
+      1: 100210
+    second: ONE_HANDED_DOUBLE_AXE
+  - first:
+      1: 100212
+    second: ONE_HANDED_WARHAMMER
+  - first:
+      1: 100214
+    second: ROBE_ARMOR
+  - first:
+      1: 100216
+    second: TWO_HANDED_DOUBLE_AXE
+  - first:
+      1: 100218
+    second: TWO_HANDED_WARHAMMER
+  - first:
+      1: 100220
+    second: HATCHET_ACTION
+  - first:
+      1: 100222
+    second: HATCHET_IDLE
+  - first:
+      1: 100224
+    second: SHIELD_A
+  - first:
+      1: 100226
+    second: SHIELD_B
+  - first:
+      1: 100228
+    second: SHIELD_C
+  - first:
+      4: 400000
+    second: BEARD_A
+  - first:
+      4: 400002
+    second: BEARD_B
+  - first:
+      4: 400004
+    second: BEARD_C
+  - first:
+      4: 400006
+    second: BEARD_D
+  - first:
+      4: 400008
+    second: BEARD_E
+  - first:
+      4: 400010
+    second: BODY_ARMOR
+  - first:
+      4: 400012
+    second: //RootNode
+  - first:
+      4: 400014
+    second: DWARF
+  - first:
+      4: 400016
+    second: DWARF_
+  - first:
+      4: 400018
+    second: DWARF_ Head
+  - first:
+      4: 400020
+    second: DWARF_ HeadNub
+  - first:
+      4: 400022
+    second: DWARF_ L Calf
+  - first:
+      4: 400024
+    second: DWARF_ L Clavicle
+  - first:
+      4: 400026
+    second: DWARF_ L Finger0
+  - first:
+      4: 400028
+    second: DWARF_ L Finger01
+  - first:
+      4: 400030
+    second: DWARF_ L Finger02
+  - first:
+      4: 400032
+    second: DWARF_ L Finger0Nub
+  - first:
+      4: 400034
+    second: DWARF_ L Finger1
+  - first:
+      4: 400036
+    second: DWARF_ L Finger11
+  - first:
+      4: 400038
+    second: DWARF_ L Finger12
+  - first:
+      4: 400040
+    second: DWARF_ L Finger1Nub
+  - first:
+      4: 400042
+    second: DWARF_ L Finger2
+  - first:
+      4: 400044
+    second: DWARF_ L Finger21
+  - first:
+      4: 400046
+    second: DWARF_ L Finger22
+  - first:
+      4: 400048
+    second: DWARF_ L Finger2Nub
+  - first:
+      4: 400050
+    second: DWARF_ L Finger3
+  - first:
+      4: 400052
+    second: DWARF_ L Finger31
+  - first:
+      4: 400054
+    second: DWARF_ L Finger32
+  - first:
+      4: 400056
+    second: DWARF_ L Finger3Nub
+  - first:
+      4: 400058
+    second: DWARF_ L Finger4
+  - first:
+      4: 400060
+    second: DWARF_ L Finger41
+  - first:
+      4: 400062
+    second: DWARF_ L Finger42
+  - first:
+      4: 400064
+    second: DWARF_ L Finger4Nub
+  - first:
+      4: 400066
+    second: DWARF_ L Foot
+  - first:
+      4: 400068
+    second: DWARF_ L Forearm
+  - first:
+      4: 400070
+    second: DWARF_ L Hand
+  - first:
+      4: 400072
+    second: DWARF_ L Thigh
+  - first:
+      4: 400074
+    second: DWARF_ L Toe0
+  - first:
+      4: 400076
+    second: DWARF_ L Toe0Nub
+  - first:
+      4: 400078
+    second: DWARF_ L UpperArm
+  - first:
+      4: 400080
+    second: DWARF_ Neck
+  - first:
+      4: 400082
+    second: DWARF_ Pelvis
+  - first:
+      4: 400084
+    second: DWARF_ Queue de cheval 1
+  - first:
+      4: 400086
+    second: DWARF_ Queue de cheval 1Nub
+  - first:
+      4: 400088
+    second: DWARF_ Queue de cheval 2
+  - first:
+      4: 400090
+    second: DWARF_ Queue de cheval 21
+  - first:
+      4: 400092
+    second: DWARF_ Queue de cheval 22
+  - first:
+      4: 400094
+    second: DWARF_ Queue de cheval 23
+  - first:
+      4: 400096
+    second: DWARF_ Queue de cheval 24
+  - first:
+      4: 400098
+    second: DWARF_ Queue de cheval 25
+  - first:
+      4: 400100
+    second: DWARF_ Queue de cheval 2Nub
+  - first:
+      4: 400102
+    second: DWARF_ R Calf
+  - first:
+      4: 400104
+    second: DWARF_ R Clavicle
+  - first:
+      4: 400106
+    second: DWARF_ R Finger0
+  - first:
+      4: 400108
+    second: DWARF_ R Finger01
+  - first:
+      4: 400110
+    second: DWARF_ R Finger02
+  - first:
+      4: 400112
+    second: DWARF_ R Finger0Nub
+  - first:
+      4: 400114
+    second: DWARF_ R Finger1
+  - first:
+      4: 400116
+    second: DWARF_ R Finger11
+  - first:
+      4: 400118
+    second: DWARF_ R Finger12
+  - first:
+      4: 400120
+    second: DWARF_ R Finger1Nub
+  - first:
+      4: 400122
+    second: DWARF_ R Finger2
+  - first:
+      4: 400124
+    second: DWARF_ R Finger21
+  - first:
+      4: 400126
+    second: DWARF_ R Finger22
+  - first:
+      4: 400128
+    second: DWARF_ R Finger2Nub
+  - first:
+      4: 400130
+    second: DWARF_ R Finger3
+  - first:
+      4: 400132
+    second: DWARF_ R Finger31
+  - first:
+      4: 400134
+    second: DWARF_ R Finger32
+  - first:
+      4: 400136
+    second: DWARF_ R Finger3Nub
+  - first:
+      4: 400138
+    second: DWARF_ R Finger4
+  - first:
+      4: 400140
+    second: DWARF_ R Finger41
+  - first:
+      4: 400142
+    second: DWARF_ R Finger42
+  - first:
+      4: 400144
+    second: DWARF_ R Finger4Nub
+  - first:
+      4: 400146
+    second: DWARF_ R Foot
+  - first:
+      4: 400148
+    second: DWARF_ R Forearm
+  - first:
+      4: 400150
+    second: DWARF_ R Hand
+  - first:
+      4: 400152
+    second: DWARF_ R Thigh
+  - first:
+      4: 400154
+    second: DWARF_ R Toe0
+  - first:
+      4: 400156
+    second: DWARF_ R Toe0Nub
+  - first:
+      4: 400158
+    second: DWARF_ R UpperArm
+  - first:
+      4: 400160
+    second: DWARF_ Spine
+  - first:
+      4: 400162
+    second: DWARF_ Spine1
+  - first:
+      4: 400164
+    second: FOREARM_ARMOR_L
+  - first:
+      4: 400166
+    second: FOREARM_ARMOR_R
+  - first:
+      4: 400168
+    second: HAIRCUT_A
+  - first:
+      4: 400170
+    second: HAIRCUT_B
+  - first:
+      4: 400172
+    second: HAIRCUT_C
+  - first:
+      4: 400174
+    second: HAIRCUT_D
+  - first:
+      4: 400176
+    second: HAIRCUT_E
+  - first:
+      4: 400178
+    second: HAIRCUT_F
+  - first:
+      4: 400180
+    second: HAIRCUT_G
+  - first:
+      4: 400182
+    second: HELMET_A
+  - first:
+      4: 400184
+    second: HELMET_A_1
+  - first:
+      4: 400186
+    second: HELMET_A_2
+  - first:
+      4: 400188
+    second: HELMET_A_3
+  - first:
+      4: 400190
+    second: HELMET_B
+  - first:
+      4: 400192
+    second: HELMET_B_1
+  - first:
+      4: 400194
+    second: HELMET_B_2
+  - first:
+      4: 400196
+    second: HELMET_B_3
+  - first:
+      4: 400198
+    second: HELMET_C
+  - first:
+      4: 400200
+    second: HELMET_C_1
+  - first:
+      4: 400202
+    second: HELMET_C_2
+  - first:
+      4: 400204
+    second: HELMET_C_3
+  - first:
+      4: 400206
+    second: MACE
+  - first:
+      4: 400208
+    second: ONE_HANDED_AXE
+  - first:
+      4: 400210
+    second: ONE_HANDED_DOUBLE_AXE
+  - first:
+      4: 400212
+    second: ONE_HANDED_WARHAMMER
+  - first:
+      4: 400214
+    second: ROBE_ARMOR
+  - first:
+      4: 400216
+    second: TWO_HANDED_DOUBLE_AXE
+  - first:
+      4: 400218
+    second: TWO_HANDED_WARHAMMER
+  - first:
+      4: 400220
+    second: HATCHET_ACTION
+  - first:
+      4: 400222
+    second: HATCHET_IDLE
+  - first:
+      4: 400224
+    second: SHIELD_A
+  - first:
+      4: 400226
+    second: SHIELD_B
+  - first:
+      4: 400228
+    second: SHIELD_C
+  - first:
+      23: 2300000
+    second: BEARD_A
+  - first:
+      23: 2300002
+    second: BEARD_B
+  - first:
+      23: 2300004
+    second: BEARD_C
+  - first:
+      23: 2300006
+    second: BEARD_D
+  - first:
+      23: 2300008
+    second: BEARD_E
+  - first:
+      23: 2300010
+    second: FOREARM_ARMOR_L
+  - first:
+      23: 2300012
+    second: FOREARM_ARMOR_R
+  - first:
+      23: 2300014
+    second: HAIRCUT_A
+  - first:
+      23: 2300016
+    second: HAIRCUT_B
+  - first:
+      23: 2300018
+    second: HAIRCUT_C
+  - first:
+      23: 2300020
+    second: HAIRCUT_D
+  - first:
+      23: 2300022
+    second: HAIRCUT_E
+  - first:
+      23: 2300024
+    second: HAIRCUT_F
+  - first:
+      23: 2300026
+    second: HAIRCUT_G
+  - first:
+      23: 2300028
+    second: HELMET_A
+  - first:
+      23: 2300030
+    second: HELMET_A_1
+  - first:
+      23: 2300032
+    second: HELMET_A_2
+  - first:
+      23: 2300034
+    second: HELMET_A_3
+  - first:
+      23: 2300036
+    second: HELMET_B
+  - first:
+      23: 2300038
+    second: HELMET_B_1
+  - first:
+      23: 2300040
+    second: HELMET_B_2
+  - first:
+      23: 2300042
+    second: HELMET_B_3
+  - first:
+      23: 2300044
+    second: HELMET_C
+  - first:
+      23: 2300046
+    second: HELMET_C_1
+  - first:
+      23: 2300048
+    second: HELMET_C_2
+  - first:
+      23: 2300050
+    second: HELMET_C_3
+  - first:
+      23: 2300052
+    second: MACE
+  - first:
+      23: 2300054
+    second: ONE_HANDED_AXE
+  - first:
+      23: 2300056
+    second: ONE_HANDED_DOUBLE_AXE
+  - first:
+      23: 2300058
+    second: ONE_HANDED_WARHAMMER
+  - first:
+      23: 2300060
+    second: TWO_HANDED_DOUBLE_AXE
+  - first:
+      23: 2300062
+    second: TWO_HANDED_WARHAMMER
+  - first:
+      23: 2300064
+    second: HATCHET_ACTION
+  - first:
+      23: 2300066
+    second: HATCHET_IDLE
+  - first:
+      23: 2300068
+    second: SHIELD_A
+  - first:
+      23: 2300070
+    second: SHIELD_B
+  - first:
+      23: 2300072
+    second: SHIELD_C
+  - first:
+      33: 3300000
+    second: BEARD_A
+  - first:
+      33: 3300002
+    second: BEARD_B
+  - first:
+      33: 3300004
+    second: BEARD_C
+  - first:
+      33: 3300006
+    second: BEARD_D
+  - first:
+      33: 3300008
+    second: BEARD_E
+  - first:
+      33: 3300010
+    second: FOREARM_ARMOR_L
+  - first:
+      33: 3300012
+    second: FOREARM_ARMOR_R
+  - first:
+      33: 3300014
+    second: HAIRCUT_A
+  - first:
+      33: 3300016
+    second: HAIRCUT_B
+  - first:
+      33: 3300018
+    second: HAIRCUT_C
+  - first:
+      33: 3300020
+    second: HAIRCUT_D
+  - first:
+      33: 3300022
+    second: HAIRCUT_E
+  - first:
+      33: 3300024
+    second: HAIRCUT_F
+  - first:
+      33: 3300026
+    second: HAIRCUT_G
+  - first:
+      33: 3300028
+    second: HELMET_A
+  - first:
+      33: 3300030
+    second: HELMET_A_1
+  - first:
+      33: 3300032
+    second: HELMET_A_2
+  - first:
+      33: 3300034
+    second: HELMET_A_3
+  - first:
+      33: 3300036
+    second: HELMET_B
+  - first:
+      33: 3300038
+    second: HELMET_B_1
+  - first:
+      33: 3300040
+    second: HELMET_B_2
+  - first:
+      33: 3300042
+    second: HELMET_B_3
+  - first:
+      33: 3300044
+    second: HELMET_C
+  - first:
+      33: 3300046
+    second: HELMET_C_1
+  - first:
+      33: 3300048
+    second: HELMET_C_2
+  - first:
+      33: 3300050
+    second: HELMET_C_3
+  - first:
+      33: 3300052
+    second: MACE
+  - first:
+      33: 3300054
+    second: ONE_HANDED_AXE
+  - first:
+      33: 3300056
+    second: ONE_HANDED_DOUBLE_AXE
+  - first:
+      33: 3300058
+    second: ONE_HANDED_WARHAMMER
+  - first:
+      33: 3300060
+    second: TWO_HANDED_DOUBLE_AXE
+  - first:
+      33: 3300062
+    second: TWO_HANDED_WARHAMMER
+  - first:
+      33: 3300064
+    second: HATCHET_ACTION
+  - first:
+      33: 3300066
+    second: HATCHET_IDLE
+  - first:
+      33: 3300068
+    second: SHIELD_A
+  - first:
+      33: 3300070
+    second: SHIELD_B
+  - first:
+      33: 3300072
+    second: SHIELD_C
+  - first:
+      43: 4300000
+    second: DWARF
+  - first:
+      43: 4300002
+    second: BEARD_A
+  - first:
+      43: 4300004
+    second: BODY_ARMOR
+  - first:
+      43: 4300006
+    second: ROBE_ARMOR
+  - first:
+      43: 4300008
+    second: HAIRCUT_A
+  - first:
+      43: 4300010
+    second: BEARD_B
+  - first:
+      43: 4300012
+    second: BEARD_C
+  - first:
+      43: 4300014
+    second: BEARD_D
+  - first:
+      43: 4300016
+    second: BEARD_E
+  - first:
+      43: 4300018
+    second: HAIRCUT_B
+  - first:
+      43: 4300020
+    second: HAIRCUT_C
+  - first:
+      43: 4300022
+    second: HAIRCUT_D
+  - first:
+      43: 4300024
+    second: HAIRCUT_E
+  - first:
+      43: 4300026
+    second: HAIRCUT_F
+  - first:
+      43: 4300028
+    second: HAIRCUT_G
+  - first:
+      43: 4300030
+    second: FOREARM_ARMOR_L
+  - first:
+      43: 4300032
+    second: ONE_HANDED_AXE
+  - first:
+      43: 4300034
+    second: MACE
+  - first:
+      43: 4300036
+    second: TWO_HANDED_WARHAMMER
+  - first:
+      43: 4300038
+    second: TWO_HANDED_DOUBLE_AXE
+  - first:
+      43: 4300040
+    second: ONE_HANDED_WARHAMMER
+  - first:
+      43: 4300042
+    second: ONE_HANDED_DOUBLE_AXE
+  - first:
+      43: 4300044
+    second: FOREARM_ARMOR_R
+  - first:
+      43: 4300046
+    second: HELMET_B_3
+  - first:
+      43: 4300048
+    second: HELMET_A_3
+  - first:
+      43: 4300050
+    second: HELMET_A_2
+  - first:
+      43: 4300052
+    second: HELMET_B_2
+  - first:
+      43: 4300054
+    second: HELMET_B_1
+  - first:
+      43: 4300056
+    second: HELMET_A_1
+  - first:
+      43: 4300058
+    second: HELMET_B
+  - first:
+      43: 4300060
+    second: HELMET_A
+  - first:
+      43: 4300062
+    second: HELMET_C_2
+  - first:
+      43: 4300064
+    second: HELMET_C_3
+  - first:
+      43: 4300066
+    second: HELMET_C_1
+  - first:
+      43: 4300068
+    second: HELMET_C
+  - first:
+      43: 4300070
+    second: HATCHET_ACTION
+  - first:
+      43: 4300072
+    second: SHIELD_B
+  - first:
+      43: 4300074
+    second: SHIELD_C
+  - first:
+      43: 4300076
+    second: SHIELD_A
+  - first:
+      43: 4300078
+    second: HATCHET_IDLE
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: BODY_ARMOR
+  - first:
+      137: 13700002
+    second: DWARF
+  - first:
+      137: 13700004
+    second: ROBE_ARMOR
+  - first:
+      137: 13700006
+    second: BEARD_A
+  - first:
+      137: 13700008
+    second: BEARD_B
+  - first:
+      137: 13700010
+    second: BEARD_C
+  - first:
+      137: 13700012
+    second: BEARD_D
+  - first:
+      137: 13700014
+    second: BEARD_E
+  - first:
+      137: 13700016
+    second: HAIRCUT_B
+  - first:
+      137: 13700018
+    second: HAIRCUT_C
+  - first:
+      137: 13700020
+    second: HAIRCUT_D
+  - first:
+      137: 13700022
+    second: HAIRCUT_E
+  - first:
+      137: 13700024
+    second: HAIRCUT_A
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 6
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - c4b0a988141dbaf4ea117c3e76f2e0f9
+  - 04720dcae5aa6d347b1999bf266144dc
+  - e9c3ee6740dd8774b8951edd71033b9d
+  - 2f40bb2eeb74ca940af6f2ba843bfb31
+  - 33e08f1c8c072d145ba4c5b5d159406c
+  - 385cf76e90e44674d80792d3dc9c1f9a
+  - 60c2dabedd719794e9d545baa8003896
+  - c443dbc6a0056a34c99d66e3f89b4a0f
+  - df2ec16ae6b3165418d14708632ab6de
+  - 5a36db3df2748b24a88e955af88f90c0
+  - 37b02eeacbd89144d847f5049278c7b4
+  - 7d9924ae22eba944f94cfa96265e2c4c
+  - adc55426ed6b7b24ab37e9e999a0ecf2
+  - 16c66053c7ba9124b9856cc23387926b
+  - 42cd1388d94d0834bbe3b36bcbc9bb17
+  - d9b873f21fce278429de97cb2945d6f7
+  - 869b65345d463714ea7c82eda85e3b7b
+  - fd0e988cdab40214fbd2e4551a7c27b0
+  - 0507f2ab77e743842929d15a23d8e4bb
+  - e7a53e242b451e54eba6ce94c812fc6d
+  - ceaab7f82ff30a94a803f1aa3428ab6f
+  - 66ea1b7ad256bae4788b55fec0e958ec
+  - 97f3e1285ad6c0d4baf9618629092fb4
+  - 6793675afc4f97d45a4632d4b83b9ab8
+  - c7f578e0485fcbb48a867343c8ee6a1d
+  - cb3a7a7795758da43b9a178a7f943e65
+  - f43ac6769189eb2438c4a50a6603f71e
+  - ff2b2823bf7303741a3870355c71b80b
+  - 5918236742840d549916a3868c1ca452
+  - f34abbf660dea104a9106192ae0e0799
+  - 10e16031a273b7349a6f5bac4d66ebea
+  - 47d0a82fa834de041b2d33b852fd4e0c
+  - 585cb48ddaffdc64c8aaace9041d0531
+  - 83ef4a9d0b3b5054181ec03d68237a88
+  - da4b60db64364444fb4a47e90afae0af
+  - d32681288a42afd4da57dd4847c2778f
+  - 2b62b4aeaa0214c4fa7aa5ca788966b2
+  - 93ba09482ceb873409e741bcee23da5a
+  - 7100937dc26e5f34b9a268d5ced43d3f
+  - 3b8dae13bbdb10145901fc2813a55704
+  - 8949016103eeb2845a708eb221735519
+  - 4e59ef1f677b76f43abf363043a7367a
+  - 2f24596adcc5f314195945377f3d508d
+  - 4528561e40c2a934092f7c4ff4c43946
+  - 73adf25151df1dc43b6bcf9b36adfd8a
+  - 8673d44ac2f863f43a3e91d3e60b9132
+  - 40e6df0036f5dd0488020eee5b0e48e0
+  - d8cd1da58f0e1774f9668afb3efaf5b6
+  - 7f69ce7e16b47e04f9063e019f140790
+  - eb388554f71bdb34aa612d7aa363998b
+  - 5fd8039aa5f98534db977f07bab82889
+  - 5dc1d77218fcf2240aa4b408670ed209
+  - 80ceefd40309d994297ee061d60b56ed
+  - b84bd8308721d4243870cf12018f30c9
+  - 9a04187513fac544a9c29639a6c42843
+  - 63cda153ae43cfd469649f41edf9006d
+  - 015007c9c80373d40bd52092c1a3a817
+  - 46c6fae7fe03433479b81002670b15bb
+  - b005b427122d56e43ae49672e7118fe7
+  - c2c04b3ec190fb0498ee26ebfdcc5600
+  - d60baf8986512044ea33acb2f1784c5a
+  - ff29eed2cb347b34198115f24675ec8c
+  - 2540f919defbfac45bec9e69481a4336
+  - 795e21de91adc414e96232df50fa2d62
+  - c0009dfea9f23dc4582b2c36533298e5
+  - 48647d557f701cc42a2bbcf9f88eb4b7
+  - 726ad01f93cb6d54da5adf4a8c047e68
+  - 315c15fc7dd8e994fbdf4dcdfc10e3a5
+  - 1a1e2a696b5cbda4bab34cb2de8e4bc7
+  - 5e2c206522410a245909396b2d6fc43f
+  - 8b8cd1f46e9dec048b0a3f5cc0708445
+  - 273584f0c6cb2e0449e122428a891aea
+  - 055e41886cdec0140984d143b7d7fc5a
+  - 13941f7915adfbd45aaeaa0a9669fc04
+  - 62f6c213febda6c4bbeee2c81055e984
+  - b86c6365f4869874ab9cf867e28f83c0
+  - 8c93307bca3364f4f8c9868550c0cf58
+  - 71262a19cc44d564a8acaa30825013ce
+  - 347b059ea03521c4aaffc0d52fe4b504
+  - 50f61d676a313e34fa947ac0b58fb9fe
+  - d6f14ab87b3760b49a482949299c4488
+  - 3f7bd183711c1bc4eb0e5c946165a6a1
+  - ebaef4fc631540e48bed3c1554225cf6
+  - 7c408ec822d1e074cbfbe2bcbbb8d0d8
+  - 0a3478b2107cac044ab3796955a0e49e
+  - baf4071412b576640bae962a6e21aeab
+  - 02da5da535e01984b84a1e832719fa43
+  - 5efb2342606f5a448b1f7b6e10747b0e
+  - 4867cefdb59928649a47a7919e9642c9
+  - 8c81289450da94140b71d7526df4061b
+  - 27874c4084292174b82293201b1fdfaa
+  - 85e94b569b23bb241b3ccb8bf93607f0
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

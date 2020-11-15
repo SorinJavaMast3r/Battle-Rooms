@@ -1,0 +1,1660 @@
+fileFormatVersion: 2
+guid: 1083ab1eb6088c84e90537a47aa6a1eb
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Factice007
+  - first:
+      1: 100002
+    second: Factice008
+  - first:
+      1: 100004
+    second: Factice009
+  - first:
+      1: 100006
+    second: Factice012
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: KRAKEN
+  - first:
+      1: 100012
+    second: KRAKEN_
+  - first:
+      1: 100014
+    second: KRAKEN_ CLAW_L_1
+  - first:
+      1: 100016
+    second: KRAKEN_ CLAW_L_2
+  - first:
+      1: 100018
+    second: KRAKEN_ CLAW_L_3
+  - first:
+      1: 100020
+    second: KRAKEN_ CLAW_L_3_nub
+  - first:
+      1: 100022
+    second: KRAKEN_ CLAW_L_4
+  - first:
+      1: 100024
+    second: KRAKEN_ CLAW_L_4_nub
+  - first:
+      1: 100026
+    second: KRAKEN_ CLAW_R_1
+  - first:
+      1: 100028
+    second: KRAKEN_ CLAW_R_2
+  - first:
+      1: 100030
+    second: KRAKEN_ CLAW_R_3
+  - first:
+      1: 100032
+    second: KRAKEN_ CLAW_R_3_nub
+  - first:
+      1: 100034
+    second: KRAKEN_ CLAW_R_4
+  - first:
+      1: 100036
+    second: KRAKEN_ CLAW_R_4_nub
+  - first:
+      1: 100038
+    second: KRAKEN_ Head
+  - first:
+      1: 100040
+    second: KRAKEN_ L Calf
+  - first:
+      1: 100042
+    second: KRAKEN_ L Clavicle
+  - first:
+      1: 100044
+    second: KRAKEN_ L Finger0
+  - first:
+      1: 100046
+    second: KRAKEN_ L Foot
+  - first:
+      1: 100048
+    second: KRAKEN_ L Forearm
+  - first:
+      1: 100050
+    second: KRAKEN_ L Hand
+  - first:
+      1: 100052
+    second: KRAKEN_ L HorseLink
+  - first:
+      1: 100054
+    second: KRAKEN_ L Thigh
+  - first:
+      1: 100056
+    second: KRAKEN_ L Toe0
+  - first:
+      1: 100058
+    second: KRAKEN_ L Toe01
+  - first:
+      1: 100060
+    second: KRAKEN_ L Toe02
+  - first:
+      1: 100062
+    second: KRAKEN_ L UpperArm
+  - first:
+      1: 100064
+    second: KRAKEN_ Neck
+  - first:
+      1: 100066
+    second: KRAKEN_ Pelvis
+  - first:
+      1: 100068
+    second: KRAKEN_ Queue de cheval 1
+  - first:
+      1: 100070
+    second: KRAKEN_ Queue de cheval 11
+  - first:
+      1: 100072
+    second: KRAKEN_ Queue de cheval 12
+  - first:
+      1: 100074
+    second: KRAKEN_ Queue de cheval 13
+  - first:
+      1: 100076
+    second: KRAKEN_ Queue de cheval 14
+  - first:
+      1: 100078
+    second: KRAKEN_ Queue de cheval 15
+  - first:
+      1: 100080
+    second: KRAKEN_ Queue de cheval 16
+  - first:
+      1: 100082
+    second: KRAKEN_ Queue de cheval 2
+  - first:
+      1: 100084
+    second: KRAKEN_ Queue de cheval 21
+  - first:
+      1: 100086
+    second: KRAKEN_ Queue de cheval 22
+  - first:
+      1: 100088
+    second: KRAKEN_ Queue de cheval 23
+  - first:
+      1: 100090
+    second: KRAKEN_ Queue de cheval 24
+  - first:
+      1: 100092
+    second: KRAKEN_ Queue de cheval 25
+  - first:
+      1: 100094
+    second: KRAKEN_ Queue de cheval 26
+  - first:
+      1: 100096
+    second: KRAKEN_ R Calf
+  - first:
+      1: 100098
+    second: KRAKEN_ R Clavicle
+  - first:
+      1: 100100
+    second: KRAKEN_ R Finger0
+  - first:
+      1: 100102
+    second: KRAKEN_ R Foot
+  - first:
+      1: 100104
+    second: KRAKEN_ R Forearm
+  - first:
+      1: 100106
+    second: KRAKEN_ R Hand
+  - first:
+      1: 100108
+    second: KRAKEN_ R HorseLink
+  - first:
+      1: 100110
+    second: KRAKEN_ R Thigh
+  - first:
+      1: 100112
+    second: KRAKEN_ R Toe0
+  - first:
+      1: 100114
+    second: KRAKEN_ R Toe01
+  - first:
+      1: 100116
+    second: KRAKEN_ R Toe02
+  - first:
+      1: 100118
+    second: KRAKEN_ R UpperArm
+  - first:
+      1: 100120
+    second: KRAKEN_ Spine
+  - first:
+      1: 100122
+    second: KRAKEN_ Tail
+  - first:
+      1: 100124
+    second: KRAKEN_ Tail1
+  - first:
+      1: 100126
+    second: KRAKEN_ Tail2
+  - first:
+      1: 100128
+    second: KRAKEN_ Tail3
+  - first:
+      1: 100130
+    second: KRAKEN_ Tail4
+  - first:
+      1: 100132
+    second: KRAKEN_ Tail5
+  - first:
+      1: 100134
+    second: KRAKEN_ TENTACLE_L_A_0
+  - first:
+      1: 100136
+    second: KRAKEN_ TENTACLE_L_B_0
+  - first:
+      1: 100138
+    second: KRAKEN_ TENTACLE_L_C_0
+  - first:
+      1: 100140
+    second: KRAKEN_ TENTACLE_R_A_0
+  - first:
+      1: 100142
+    second: KRAKEN_ TENTACLE_R_B_0
+  - first:
+      1: 100144
+    second: KRAKEN_ TENTACLE_R_C_0
+  - first:
+      1: 100146
+    second: KRAKEN_TENTACLE_L_A
+  - first:
+      1: 100148
+    second: KRAKEN_TENTACLE_L_A_1
+  - first:
+      1: 100150
+    second: KRAKEN_TENTACLE_L_A_10
+  - first:
+      1: 100152
+    second: KRAKEN_TENTACLE_L_A_11
+  - first:
+      1: 100154
+    second: KRAKEN_TENTACLE_L_A_12
+  - first:
+      1: 100156
+    second: KRAKEN_TENTACLE_L_A_2
+  - first:
+      1: 100158
+    second: KRAKEN_TENTACLE_L_A_3
+  - first:
+      1: 100160
+    second: KRAKEN_TENTACLE_L_A_4
+  - first:
+      1: 100162
+    second: KRAKEN_TENTACLE_L_A_5
+  - first:
+      1: 100164
+    second: KRAKEN_TENTACLE_L_A_6
+  - first:
+      1: 100166
+    second: KRAKEN_TENTACLE_L_A_7
+  - first:
+      1: 100168
+    second: KRAKEN_TENTACLE_L_A_8
+  - first:
+      1: 100170
+    second: KRAKEN_TENTACLE_L_A_9
+  - first:
+      1: 100172
+    second: KRAKEN_TENTACLE_L_A_nub
+  - first:
+      1: 100174
+    second: KRAKEN_TENTACLE_L_A_root
+  - first:
+      1: 100176
+    second: KRAKEN_TENTACLE_L_B
+  - first:
+      1: 100178
+    second: KRAKEN_TENTACLE_L_B_1
+  - first:
+      1: 100180
+    second: KRAKEN_TENTACLE_L_B_10
+  - first:
+      1: 100182
+    second: KRAKEN_TENTACLE_L_B_11
+  - first:
+      1: 100184
+    second: KRAKEN_TENTACLE_L_B_12
+  - first:
+      1: 100186
+    second: KRAKEN_TENTACLE_L_B_2
+  - first:
+      1: 100188
+    second: KRAKEN_TENTACLE_L_B_3
+  - first:
+      1: 100190
+    second: KRAKEN_TENTACLE_L_B_4
+  - first:
+      1: 100192
+    second: KRAKEN_TENTACLE_L_B_5
+  - first:
+      1: 100194
+    second: KRAKEN_TENTACLE_L_B_6
+  - first:
+      1: 100196
+    second: KRAKEN_TENTACLE_L_B_7
+  - first:
+      1: 100198
+    second: KRAKEN_TENTACLE_L_B_8
+  - first:
+      1: 100200
+    second: KRAKEN_TENTACLE_L_B_9
+  - first:
+      1: 100202
+    second: KRAKEN_TENTACLE_L_B_nub
+  - first:
+      1: 100204
+    second: KRAKEN_TENTACLE_L_B_root
+  - first:
+      1: 100206
+    second: KRAKEN_TENTACLE_L_C
+  - first:
+      1: 100208
+    second: KRAKEN_TENTACLE_L_C_1
+  - first:
+      1: 100210
+    second: KRAKEN_TENTACLE_L_C_10
+  - first:
+      1: 100212
+    second: KRAKEN_TENTACLE_L_C_11
+  - first:
+      1: 100214
+    second: KRAKEN_TENTACLE_L_C_12
+  - first:
+      1: 100216
+    second: KRAKEN_TENTACLE_L_C_2
+  - first:
+      1: 100218
+    second: KRAKEN_TENTACLE_L_C_3
+  - first:
+      1: 100220
+    second: KRAKEN_TENTACLE_L_C_4
+  - first:
+      1: 100222
+    second: KRAKEN_TENTACLE_L_C_5
+  - first:
+      1: 100224
+    second: KRAKEN_TENTACLE_L_C_6
+  - first:
+      1: 100226
+    second: KRAKEN_TENTACLE_L_C_7
+  - first:
+      1: 100228
+    second: KRAKEN_TENTACLE_L_C_8
+  - first:
+      1: 100230
+    second: KRAKEN_TENTACLE_L_C_9
+  - first:
+      1: 100232
+    second: KRAKEN_TENTACLE_L_C_nub
+  - first:
+      1: 100234
+    second: KRAKEN_TENTACLE_L_C_root
+  - first:
+      1: 100236
+    second: KRAKEN_TENTACLE_R_A
+  - first:
+      1: 100238
+    second: KRAKEN_TENTACLE_R_A_1
+  - first:
+      1: 100240
+    second: KRAKEN_TENTACLE_R_A_10
+  - first:
+      1: 100242
+    second: KRAKEN_TENTACLE_R_A_11
+  - first:
+      1: 100244
+    second: KRAKEN_TENTACLE_R_A_12
+  - first:
+      1: 100246
+    second: KRAKEN_TENTACLE_R_A_2
+  - first:
+      1: 100248
+    second: KRAKEN_TENTACLE_R_A_3
+  - first:
+      1: 100250
+    second: KRAKEN_TENTACLE_R_A_4
+  - first:
+      1: 100252
+    second: KRAKEN_TENTACLE_R_A_5
+  - first:
+      1: 100254
+    second: KRAKEN_TENTACLE_R_A_6
+  - first:
+      1: 100256
+    second: KRAKEN_TENTACLE_R_A_7
+  - first:
+      1: 100258
+    second: KRAKEN_TENTACLE_R_A_8
+  - first:
+      1: 100260
+    second: KRAKEN_TENTACLE_R_A_9
+  - first:
+      1: 100262
+    second: KRAKEN_TENTACLE_R_A_nub
+  - first:
+      1: 100264
+    second: KRAKEN_TENTACLE_R_A_root
+  - first:
+      1: 100266
+    second: KRAKEN_TENTACLE_R_B
+  - first:
+      1: 100268
+    second: KRAKEN_TENTACLE_R_B_1
+  - first:
+      1: 100270
+    second: KRAKEN_TENTACLE_R_B_10
+  - first:
+      1: 100272
+    second: KRAKEN_TENTACLE_R_B_11
+  - first:
+      1: 100274
+    second: KRAKEN_TENTACLE_R_B_12
+  - first:
+      1: 100276
+    second: KRAKEN_TENTACLE_R_B_2
+  - first:
+      1: 100278
+    second: KRAKEN_TENTACLE_R_B_3
+  - first:
+      1: 100280
+    second: KRAKEN_TENTACLE_R_B_4
+  - first:
+      1: 100282
+    second: KRAKEN_TENTACLE_R_B_5
+  - first:
+      1: 100284
+    second: KRAKEN_TENTACLE_R_B_6
+  - first:
+      1: 100286
+    second: KRAKEN_TENTACLE_R_B_7
+  - first:
+      1: 100288
+    second: KRAKEN_TENTACLE_R_B_8
+  - first:
+      1: 100290
+    second: KRAKEN_TENTACLE_R_B_9
+  - first:
+      1: 100292
+    second: KRAKEN_TENTACLE_R_B_nub
+  - first:
+      1: 100294
+    second: KRAKEN_TENTACLE_R_B_root
+  - first:
+      1: 100296
+    second: KRAKEN_TENTACLE_R_C
+  - first:
+      1: 100298
+    second: KRAKEN_TENTACLE_R_C_1
+  - first:
+      1: 100300
+    second: KRAKEN_TENTACLE_R_C_10
+  - first:
+      1: 100302
+    second: KRAKEN_TENTACLE_R_C_11
+  - first:
+      1: 100304
+    second: KRAKEN_TENTACLE_R_C_12
+  - first:
+      1: 100306
+    second: KRAKEN_TENTACLE_R_C_2
+  - first:
+      1: 100308
+    second: KRAKEN_TENTACLE_R_C_3
+  - first:
+      1: 100310
+    second: KRAKEN_TENTACLE_R_C_4
+  - first:
+      1: 100312
+    second: KRAKEN_TENTACLE_R_C_5
+  - first:
+      1: 100314
+    second: KRAKEN_TENTACLE_R_C_6
+  - first:
+      1: 100316
+    second: KRAKEN_TENTACLE_R_C_7
+  - first:
+      1: 100318
+    second: KRAKEN_TENTACLE_R_C_8
+  - first:
+      1: 100320
+    second: KRAKEN_TENTACLE_R_C_9
+  - first:
+      1: 100322
+    second: KRAKEN_TENTACLE_R_C_nub
+  - first:
+      1: 100324
+    second: KRAKEN_TENTACLE_R_C_root
+  - first:
+      1: 100326
+    second: KRAKEN_JAW_LOWER
+  - first:
+      1: 100328
+    second: KRAKEN_JAW_UPPER
+  - first:
+      4: 400000
+    second: Factice007
+  - first:
+      4: 400002
+    second: Factice008
+  - first:
+      4: 400004
+    second: Factice009
+  - first:
+      4: 400006
+    second: Factice012
+  - first:
+      4: 400008
+    second: KRAKEN
+  - first:
+      4: 400010
+    second: //RootNode
+  - first:
+      4: 400012
+    second: KRAKEN_
+  - first:
+      4: 400014
+    second: KRAKEN_ CLAW_L_1
+  - first:
+      4: 400016
+    second: KRAKEN_ CLAW_L_2
+  - first:
+      4: 400018
+    second: KRAKEN_ CLAW_L_3
+  - first:
+      4: 400020
+    second: KRAKEN_ CLAW_L_3_nub
+  - first:
+      4: 400022
+    second: KRAKEN_ CLAW_L_4
+  - first:
+      4: 400024
+    second: KRAKEN_ CLAW_L_4_nub
+  - first:
+      4: 400026
+    second: KRAKEN_ CLAW_R_1
+  - first:
+      4: 400028
+    second: KRAKEN_ CLAW_R_2
+  - first:
+      4: 400030
+    second: KRAKEN_ CLAW_R_3
+  - first:
+      4: 400032
+    second: KRAKEN_ CLAW_R_3_nub
+  - first:
+      4: 400034
+    second: KRAKEN_ CLAW_R_4
+  - first:
+      4: 400036
+    second: KRAKEN_ CLAW_R_4_nub
+  - first:
+      4: 400038
+    second: KRAKEN_ Head
+  - first:
+      4: 400040
+    second: KRAKEN_ L Calf
+  - first:
+      4: 400042
+    second: KRAKEN_ L Clavicle
+  - first:
+      4: 400044
+    second: KRAKEN_ L Finger0
+  - first:
+      4: 400046
+    second: KRAKEN_ L Foot
+  - first:
+      4: 400048
+    second: KRAKEN_ L Forearm
+  - first:
+      4: 400050
+    second: KRAKEN_ L Hand
+  - first:
+      4: 400052
+    second: KRAKEN_ L HorseLink
+  - first:
+      4: 400054
+    second: KRAKEN_ L Thigh
+  - first:
+      4: 400056
+    second: KRAKEN_ L Toe0
+  - first:
+      4: 400058
+    second: KRAKEN_ L Toe01
+  - first:
+      4: 400060
+    second: KRAKEN_ L Toe02
+  - first:
+      4: 400062
+    second: KRAKEN_ L UpperArm
+  - first:
+      4: 400064
+    second: KRAKEN_ Neck
+  - first:
+      4: 400066
+    second: KRAKEN_ Pelvis
+  - first:
+      4: 400068
+    second: KRAKEN_ Queue de cheval 1
+  - first:
+      4: 400070
+    second: KRAKEN_ Queue de cheval 11
+  - first:
+      4: 400072
+    second: KRAKEN_ Queue de cheval 12
+  - first:
+      4: 400074
+    second: KRAKEN_ Queue de cheval 13
+  - first:
+      4: 400076
+    second: KRAKEN_ Queue de cheval 14
+  - first:
+      4: 400078
+    second: KRAKEN_ Queue de cheval 15
+  - first:
+      4: 400080
+    second: KRAKEN_ Queue de cheval 16
+  - first:
+      4: 400082
+    second: KRAKEN_ Queue de cheval 2
+  - first:
+      4: 400084
+    second: KRAKEN_ Queue de cheval 21
+  - first:
+      4: 400086
+    second: KRAKEN_ Queue de cheval 22
+  - first:
+      4: 400088
+    second: KRAKEN_ Queue de cheval 23
+  - first:
+      4: 400090
+    second: KRAKEN_ Queue de cheval 24
+  - first:
+      4: 400092
+    second: KRAKEN_ Queue de cheval 25
+  - first:
+      4: 400094
+    second: KRAKEN_ Queue de cheval 26
+  - first:
+      4: 400096
+    second: KRAKEN_ R Calf
+  - first:
+      4: 400098
+    second: KRAKEN_ R Clavicle
+  - first:
+      4: 400100
+    second: KRAKEN_ R Finger0
+  - first:
+      4: 400102
+    second: KRAKEN_ R Foot
+  - first:
+      4: 400104
+    second: KRAKEN_ R Forearm
+  - first:
+      4: 400106
+    second: KRAKEN_ R Hand
+  - first:
+      4: 400108
+    second: KRAKEN_ R HorseLink
+  - first:
+      4: 400110
+    second: KRAKEN_ R Thigh
+  - first:
+      4: 400112
+    second: KRAKEN_ R Toe0
+  - first:
+      4: 400114
+    second: KRAKEN_ R Toe01
+  - first:
+      4: 400116
+    second: KRAKEN_ R Toe02
+  - first:
+      4: 400118
+    second: KRAKEN_ R UpperArm
+  - first:
+      4: 400120
+    second: KRAKEN_ Spine
+  - first:
+      4: 400122
+    second: KRAKEN_ Tail
+  - first:
+      4: 400124
+    second: KRAKEN_ Tail1
+  - first:
+      4: 400126
+    second: KRAKEN_ Tail2
+  - first:
+      4: 400128
+    second: KRAKEN_ Tail3
+  - first:
+      4: 400130
+    second: KRAKEN_ Tail4
+  - first:
+      4: 400132
+    second: KRAKEN_ Tail5
+  - first:
+      4: 400134
+    second: KRAKEN_ TENTACLE_L_A_0
+  - first:
+      4: 400136
+    second: KRAKEN_ TENTACLE_L_B_0
+  - first:
+      4: 400138
+    second: KRAKEN_ TENTACLE_L_C_0
+  - first:
+      4: 400140
+    second: KRAKEN_ TENTACLE_R_A_0
+  - first:
+      4: 400142
+    second: KRAKEN_ TENTACLE_R_B_0
+  - first:
+      4: 400144
+    second: KRAKEN_ TENTACLE_R_C_0
+  - first:
+      4: 400146
+    second: KRAKEN_TENTACLE_L_A
+  - first:
+      4: 400148
+    second: KRAKEN_TENTACLE_L_A_1
+  - first:
+      4: 400150
+    second: KRAKEN_TENTACLE_L_A_10
+  - first:
+      4: 400152
+    second: KRAKEN_TENTACLE_L_A_11
+  - first:
+      4: 400154
+    second: KRAKEN_TENTACLE_L_A_12
+  - first:
+      4: 400156
+    second: KRAKEN_TENTACLE_L_A_2
+  - first:
+      4: 400158
+    second: KRAKEN_TENTACLE_L_A_3
+  - first:
+      4: 400160
+    second: KRAKEN_TENTACLE_L_A_4
+  - first:
+      4: 400162
+    second: KRAKEN_TENTACLE_L_A_5
+  - first:
+      4: 400164
+    second: KRAKEN_TENTACLE_L_A_6
+  - first:
+      4: 400166
+    second: KRAKEN_TENTACLE_L_A_7
+  - first:
+      4: 400168
+    second: KRAKEN_TENTACLE_L_A_8
+  - first:
+      4: 400170
+    second: KRAKEN_TENTACLE_L_A_9
+  - first:
+      4: 400172
+    second: KRAKEN_TENTACLE_L_A_nub
+  - first:
+      4: 400174
+    second: KRAKEN_TENTACLE_L_A_root
+  - first:
+      4: 400176
+    second: KRAKEN_TENTACLE_L_B
+  - first:
+      4: 400178
+    second: KRAKEN_TENTACLE_L_B_1
+  - first:
+      4: 400180
+    second: KRAKEN_TENTACLE_L_B_10
+  - first:
+      4: 400182
+    second: KRAKEN_TENTACLE_L_B_11
+  - first:
+      4: 400184
+    second: KRAKEN_TENTACLE_L_B_12
+  - first:
+      4: 400186
+    second: KRAKEN_TENTACLE_L_B_2
+  - first:
+      4: 400188
+    second: KRAKEN_TENTACLE_L_B_3
+  - first:
+      4: 400190
+    second: KRAKEN_TENTACLE_L_B_4
+  - first:
+      4: 400192
+    second: KRAKEN_TENTACLE_L_B_5
+  - first:
+      4: 400194
+    second: KRAKEN_TENTACLE_L_B_6
+  - first:
+      4: 400196
+    second: KRAKEN_TENTACLE_L_B_7
+  - first:
+      4: 400198
+    second: KRAKEN_TENTACLE_L_B_8
+  - first:
+      4: 400200
+    second: KRAKEN_TENTACLE_L_B_9
+  - first:
+      4: 400202
+    second: KRAKEN_TENTACLE_L_B_nub
+  - first:
+      4: 400204
+    second: KRAKEN_TENTACLE_L_B_root
+  - first:
+      4: 400206
+    second: KRAKEN_TENTACLE_L_C
+  - first:
+      4: 400208
+    second: KRAKEN_TENTACLE_L_C_1
+  - first:
+      4: 400210
+    second: KRAKEN_TENTACLE_L_C_10
+  - first:
+      4: 400212
+    second: KRAKEN_TENTACLE_L_C_11
+  - first:
+      4: 400214
+    second: KRAKEN_TENTACLE_L_C_12
+  - first:
+      4: 400216
+    second: KRAKEN_TENTACLE_L_C_2
+  - first:
+      4: 400218
+    second: KRAKEN_TENTACLE_L_C_3
+  - first:
+      4: 400220
+    second: KRAKEN_TENTACLE_L_C_4
+  - first:
+      4: 400222
+    second: KRAKEN_TENTACLE_L_C_5
+  - first:
+      4: 400224
+    second: KRAKEN_TENTACLE_L_C_6
+  - first:
+      4: 400226
+    second: KRAKEN_TENTACLE_L_C_7
+  - first:
+      4: 400228
+    second: KRAKEN_TENTACLE_L_C_8
+  - first:
+      4: 400230
+    second: KRAKEN_TENTACLE_L_C_9
+  - first:
+      4: 400232
+    second: KRAKEN_TENTACLE_L_C_nub
+  - first:
+      4: 400234
+    second: KRAKEN_TENTACLE_L_C_root
+  - first:
+      4: 400236
+    second: KRAKEN_TENTACLE_R_A
+  - first:
+      4: 400238
+    second: KRAKEN_TENTACLE_R_A_1
+  - first:
+      4: 400240
+    second: KRAKEN_TENTACLE_R_A_10
+  - first:
+      4: 400242
+    second: KRAKEN_TENTACLE_R_A_11
+  - first:
+      4: 400244
+    second: KRAKEN_TENTACLE_R_A_12
+  - first:
+      4: 400246
+    second: KRAKEN_TENTACLE_R_A_2
+  - first:
+      4: 400248
+    second: KRAKEN_TENTACLE_R_A_3
+  - first:
+      4: 400250
+    second: KRAKEN_TENTACLE_R_A_4
+  - first:
+      4: 400252
+    second: KRAKEN_TENTACLE_R_A_5
+  - first:
+      4: 400254
+    second: KRAKEN_TENTACLE_R_A_6
+  - first:
+      4: 400256
+    second: KRAKEN_TENTACLE_R_A_7
+  - first:
+      4: 400258
+    second: KRAKEN_TENTACLE_R_A_8
+  - first:
+      4: 400260
+    second: KRAKEN_TENTACLE_R_A_9
+  - first:
+      4: 400262
+    second: KRAKEN_TENTACLE_R_A_nub
+  - first:
+      4: 400264
+    second: KRAKEN_TENTACLE_R_A_root
+  - first:
+      4: 400266
+    second: KRAKEN_TENTACLE_R_B
+  - first:
+      4: 400268
+    second: KRAKEN_TENTACLE_R_B_1
+  - first:
+      4: 400270
+    second: KRAKEN_TENTACLE_R_B_10
+  - first:
+      4: 400272
+    second: KRAKEN_TENTACLE_R_B_11
+  - first:
+      4: 400274
+    second: KRAKEN_TENTACLE_R_B_12
+  - first:
+      4: 400276
+    second: KRAKEN_TENTACLE_R_B_2
+  - first:
+      4: 400278
+    second: KRAKEN_TENTACLE_R_B_3
+  - first:
+      4: 400280
+    second: KRAKEN_TENTACLE_R_B_4
+  - first:
+      4: 400282
+    second: KRAKEN_TENTACLE_R_B_5
+  - first:
+      4: 400284
+    second: KRAKEN_TENTACLE_R_B_6
+  - first:
+      4: 400286
+    second: KRAKEN_TENTACLE_R_B_7
+  - first:
+      4: 400288
+    second: KRAKEN_TENTACLE_R_B_8
+  - first:
+      4: 400290
+    second: KRAKEN_TENTACLE_R_B_9
+  - first:
+      4: 400292
+    second: KRAKEN_TENTACLE_R_B_nub
+  - first:
+      4: 400294
+    second: KRAKEN_TENTACLE_R_B_root
+  - first:
+      4: 400296
+    second: KRAKEN_TENTACLE_R_C
+  - first:
+      4: 400298
+    second: KRAKEN_TENTACLE_R_C_1
+  - first:
+      4: 400300
+    second: KRAKEN_TENTACLE_R_C_10
+  - first:
+      4: 400302
+    second: KRAKEN_TENTACLE_R_C_11
+  - first:
+      4: 400304
+    second: KRAKEN_TENTACLE_R_C_12
+  - first:
+      4: 400306
+    second: KRAKEN_TENTACLE_R_C_2
+  - first:
+      4: 400308
+    second: KRAKEN_TENTACLE_R_C_3
+  - first:
+      4: 400310
+    second: KRAKEN_TENTACLE_R_C_4
+  - first:
+      4: 400312
+    second: KRAKEN_TENTACLE_R_C_5
+  - first:
+      4: 400314
+    second: KRAKEN_TENTACLE_R_C_6
+  - first:
+      4: 400316
+    second: KRAKEN_TENTACLE_R_C_7
+  - first:
+      4: 400318
+    second: KRAKEN_TENTACLE_R_C_8
+  - first:
+      4: 400320
+    second: KRAKEN_TENTACLE_R_C_9
+  - first:
+      4: 400322
+    second: KRAKEN_TENTACLE_R_C_nub
+  - first:
+      4: 400324
+    second: KRAKEN_TENTACLE_R_C_root
+  - first:
+      4: 400326
+    second: KRAKEN_JAW_LOWER
+  - first:
+      4: 400328
+    second: KRAKEN_JAW_UPPER
+  - first:
+      43: 4300000
+    second: KRAKEN
+  - first:
+      43: 4300002
+    second: KRAKEN_TENTACLE_L_A
+  - first:
+      43: 4300004
+    second: KRAKEN_TENTACLE_L_B
+  - first:
+      43: 4300006
+    second: KRAKEN_TENTACLE_L_C
+  - first:
+      43: 4300008
+    second: KRAKEN_TENTACLE_R_B
+  - first:
+      43: 4300010
+    second: KRAKEN_TENTACLE_R_C
+  - first:
+      43: 4300012
+    second: KRAKEN_TENTACLE_R_A
+  - first:
+      74: 7400000
+    second: idle
+  - first:
+      74: 7400002
+    second: walk
+  - first:
+      74: 7400004
+    second: strafeR
+  - first:
+      74: 7400006
+    second: strafeL
+  - first:
+      74: 7400008
+    second: idleTentacleSmash
+  - first:
+      74: 7400010
+    second: walkTentacleSmash
+  - first:
+      74: 7400012
+    second: strafeRTentacleSmash
+  - first:
+      74: 7400014
+    second: strafeLTentacleSmash
+  - first:
+      74: 7400016
+    second: idleBeakSmash
+  - first:
+      74: 7400018
+    second: idleClawAttackR
+  - first:
+      74: 7400020
+    second: idleClawAttackL
+  - first:
+      74: 7400022
+    second: idleClawsAttack2HitCombo
+  - first:
+      74: 7400024
+    second: strafeRClawAttack
+  - first:
+      74: 7400026
+    second: strafeLClawAttack
+  - first:
+      74: 7400028
+    second: getHit
+  - first:
+      74: 7400030
+    second: death
+  - first:
+      74: 7400032
+    second: Take 00115
+  - first:
+      74: 7400034
+    second: Take 00116
+  - first:
+      74: 7400036
+    second: Take 00117
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: KRAKEN
+  - first:
+      137: 13700002
+    second: KRAKEN_TENTACLE_L_A
+  - first:
+      137: 13700004
+    second: KRAKEN_TENTACLE_L_B
+  - first:
+      137: 13700006
+    second: KRAKEN_TENTACLE_L_C
+  - first:
+      137: 13700008
+    second: KRAKEN_TENTACLE_R_A
+  - first:
+      137: 13700010
+    second: KRAKEN_TENTACLE_R_B
+  - first:
+      137: 13700012
+    second: KRAKEN_TENTACLE_R_C
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 5
+      lastFrame: 94
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 100
+      lastFrame: 189
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeR
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 195
+      lastFrame: 284
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeL
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 290
+      lastFrame: 379
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idleTentacleSmash
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 385
+      lastFrame: 474
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walkTentacleSmash
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 480
+      lastFrame: 569
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeRTentacleSmash
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 575
+      lastFrame: 664
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeLTentacleSmash
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 670
+      lastFrame: 759
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idleBeakSmash
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 765
+      lastFrame: 854
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idleClawAttackR
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 860
+      lastFrame: 949
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idleClawAttackL
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 955
+      lastFrame: 1044
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idleClawsAttack2HitCombo
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1060
+      lastFrame: 1179
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeRClawAttack
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1185
+      lastFrame: 1274
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeLClawAttack
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1280
+      lastFrame: 1369
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: getHit
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1375
+      lastFrame: 1469
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: death
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1475
+      lastFrame: 1603
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
