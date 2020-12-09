@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - MenuPausa
+  - SliderMusica
+  - SliderEfectos
+  - SliderAmbiente
   layers:
   - Default
   - TransparentFX

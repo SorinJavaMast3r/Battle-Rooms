@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    bool MenuPausaActivo;
+    public bool MenuPausaActivo;
     public GameObject MenuPausa;
+
+    public static Player llamar;
+
+    public void Awake()
+    {
+        llamar = this;
+    }
     void Start()
     {
-        MenuPausaActivo = false;
+        Sonido.llamar.PlayAmbientSound();//Cambiar cunado esten los onidos del juego
     }
 
     // Update is called once per frame
@@ -17,14 +24,18 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             MenuPausaActivo = !MenuPausaActivo;
+
+            if (MenuPausaActivo)
+            {
+                Sonido.llamar.PlayMusic();
+                MenuPausa.gameObject.SetActive(true);
+            }
+            else
+            {
+                MenuPausa.gameObject.SetActive(false);
+                Sonido.llamar.StopMusic();
+            }
         }
-        if (MenuPausaActivo)
-        {
-            MenuPausa.gameObject.SetActive(true);            
-        }
-        else
-        {
-            MenuPausa.gameObject.SetActive(false);
-        }
+        
     }
 }
