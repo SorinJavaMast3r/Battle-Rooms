@@ -1,7 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/MENU PAUSA/Brillo/Brightness.cs.meta
 guid: 59145968ec2a3a145838d092ddab36c6
 timeCreated: 1528579012
 licenseType: Store
+=======
+guid: b495e8fc66b586c478e2eb0d3554fe30
+>>>>>>> parent of 7d048e3... sonido y graficos:Assets/MENU PAUSA/Scripts/AudioManager.cs.meta
+=======
+guid: 59145968ec2a3a145838d092ddab36c6
+timeCreated: 1528579012
+licenseType: Store
+>>>>>>> parent of 7d048e3... sonido y graficos
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
