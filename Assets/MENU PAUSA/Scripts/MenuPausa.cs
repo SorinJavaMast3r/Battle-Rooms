@@ -5,21 +5,25 @@ using UnityEngine.SceneManagement; //Para poder gestionar diferentes escenas
 using UnityEngine.UI;
 public class MenuPausa : MonoBehaviour
 {
-    public Slider musica;
+    public Slider volumen;
     public Slider efectos;
-    public Slider sonidoAmbiente;
+    public Slider brillo;
     public GameObject menu_Pausa;
 
     private void Start()
     {
-        Sonido.llamar.InicializarVolumen();
+        AudioManager.llamar.PlayMusic(AudioManager.llamar.musica);
+    }
+
+    private void Update()
+    {
+      
     }
 
     public void Continuar()
     {
-        menu_Pausa.gameObject.SetActive(false);
-        Sonido.llamar.StopMusic();
-        Player.llamar.MenuPausaActivo = false;
+        //AudioManager.llamar.StopMusic(AudioManager.llamar.musica);
+        //menu_Pausa.SetActive(false);
     }
     public void Salir()
     {
@@ -28,8 +32,11 @@ public class MenuPausa : MonoBehaviour
 
     public void ResetVolumen()
     {
-        musica.value = 0.5f;
+        volumen.value = 0.5f;
         efectos.value = 0.5f;
-        sonidoAmbiente.value = 0.5f;
+    }
+    public void ResetBrillo()
+    {
+        brillo.value = 0.5f;
     }
 }
