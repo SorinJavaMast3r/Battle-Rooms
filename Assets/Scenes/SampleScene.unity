@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: 964307a4b7e025d4cbc8eae92d79b17d, type: 2}
-  slotPrefab: {fileID: 840473361784395762, guid: b0fe857a21f524b4f9cf5b91624ad6e8, type: 3}
+  slotPrefab: {fileID: 2283848686187325141, guid: b0fe857a21f524b4f9cf5b91624ad6e8, type: 3}
   PanelInventario: {fileID: 1108695602}
   listaInformacionSlot: []
   capacidad: 8
@@ -1210,10 +1210,10 @@ RectTransform:
   m_Father: {fileID: 815469761}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0}
+  m_SizeDelta: {x: 383.14636, y: 215.52554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &937117449
 MonoBehaviour:
@@ -1266,10 +1266,10 @@ RectTransform:
   m_Father: {fileID: 937117448}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.22687499, y: 0.2207778}
-  m_AnchorMax: {x: 0.777, y: 0.76538897}
-  m_AnchoredPosition: {x: -2.5, y: 5}
-  m_SizeDelta: {x: 11, y: 10}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1108695603
 MonoBehaviour:
@@ -1322,15 +1322,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 25
     m_Right: 0
-    m_Top: 0
+    m_Top: 25
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 150}
-  m_Spacing: {x: 20, y: 20}
+  m_CellSize: {x: 75, y: 75}
+  m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1111961631
