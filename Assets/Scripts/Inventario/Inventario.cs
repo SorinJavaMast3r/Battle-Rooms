@@ -27,6 +27,12 @@ public class Inventario : MonoBehaviour
     private bool inventarioActivo;
     public Slot miSlot;
 
+    public static Inventario llamar;
+
+    public void Awake()
+    {
+        llamar = this;
+    }
     private void Start()     /*REPASAR*/
     {
         PlayerPrefs.DeleteAll();
@@ -78,7 +84,7 @@ public class Inventario : MonoBehaviour
         this.listaInformacionSlot = inventoryWrapper.listaInformacionSlots;
         for (int i = 0; i < capacidad; i++)
         {
-            
+
             GameObject slot = Instantiate<GameObject>(slotPrefab, PanelInventario);
             Slot nSlot = slot.GetComponent<Slot>();
             nSlot.SetUp(i);
@@ -92,8 +98,8 @@ public class Inventario : MonoBehaviour
     {
         foreach (InformacionSlot informacionSlot in listaInformacionSlot)
         {
-            if (informacionSlot.idItem == idItem && informacionSlot.vacio == false)            
-                return informacionSlot;            
+            if (informacionSlot.idItem == idItem && informacionSlot.vacio == false)
+                return informacionSlot;
         }
         return null;
     }
@@ -107,7 +113,7 @@ public class Inventario : MonoBehaviour
         {
             if (informacionSlot.idItem == idItem && informacionSlot.cantidad < informacionSlot.cantidadMaxima && !informacionSlot.vacio && database.FindItemInDatabase(idItem).estaqueable)
                 return informacionSlot;
-            
+
         }
         foreach (InformacionSlot informacionSlot in listaInformacionSlot)
         {
@@ -126,20 +132,21 @@ public class Inventario : MonoBehaviour
         return PanelInventario.GetChild(id).GetComponent<Slot>(); //Obtenemos el elemento slot
     }
 
+    #region Funciones
     public void AddItem(int idItem)
-    {        
+    {
         Item item = database.FindItemInDatabase(idItem);//Busca en la base de datos
-        
+
         if (item != null)//Si el item existe en la base de datos hace lo siguiente
         {
             InformacionSlot informacionSlot = buscarSlotAdecuado(idItem); //Encontrar en donde guardar el item
             Debug.Log(informacionSlot);
             if (informacionSlot != null)//Si el item ya esta guardado lo que hace es
-            {                
+            {
                 informacionSlot.cantidad++; //Aumenta la cantidad del itme
                 informacionSlot.idItem = idItem;//Hago que el item sea igual
                 informacionSlot.vacio = false; //Pongo el slot como que no esta vacio
-                
+
                 BuscarSlot(informacionSlot.id).UpdateUI();//El slot que tenga el item llama al metodo UpdateUI que actuliza la imagen y el texto con la cantidad
             }
         }
@@ -151,8 +158,8 @@ public class Inventario : MonoBehaviour
 
         if (informacionSlot != null)
         {
-            if (informacionSlot.cantidad == 1)            
-                informacionSlot.SlotVacio();            
+            if (informacionSlot.cantidad == 1)
+                informacionSlot.SlotVacio();
             else
                 informacionSlot.cantidad--;
         }
@@ -173,10 +180,10 @@ public class Inventario : MonoBehaviour
         BuscarSlot(informacionSlot.id).UpdateUI();
     }
 
-    public void UsarItem(int idItem)
+    public void UsarItem(int idItem, InformacionSlot informacionSlot)
     {
         Item item = database.FindItemInDatabase(idItem);
-        Debug.Log(item);
+        //Debug.Log(item);
         InteraccionItems interaccion = new InteraccionItems();
         if (item != null)//Si el item existe en la base de datos hace lo siguiente
         {
@@ -188,9 +195,18 @@ public class Inventario : MonoBehaviour
                     case 2: interaccion.PocionMana(); break;
                 }
             }
+            if (item.tipo == Item.TipoDeItem.otro)
+            {
+                /*switch (idItem)
+                {
+                    case 3: interaccion.PocionVida(); break;
+                }*/
+            }
         }
-        RemoveItem(idItem);
+        RemoveItem(idItem, informacionSlot);
     }
+    #endregion
+
 
     public void GuardarInventario() /*REPASAR*/
     {
@@ -210,9 +226,9 @@ public class Inventario : MonoBehaviour
 
         if (id_origen != id_destino)
         {
-            InformacionSlot informacionOrigen= listaInformacionSlot[id_origen];//Cogo la infomacion del slot correspontiente (slot origen)
+            InformacionSlot informacionOrigen = listaInformacionSlot[id_origen];//Cogo la infomacion del slot correspontiente (slot origen)
             InformacionSlot informacionDestino = listaInformacionSlot[id_destino];//Cogo la infomacion del slot correspontiente (slot destino)
-            
+
             //Intercambio en invetario
             listaInformacionSlot[id_origen] = informacionDestino;//Pasa la informacion del slot de destino al de origen (Tanto la informacion del slot como la del item)
             listaInformacionSlot[id_origen].id = id_origen; //Como no quiero que se intercambien los id del slot pues le asigno de nuevo el que tenia
@@ -230,7 +246,7 @@ public class Inventario : MonoBehaviour
 
             slotOrigen.textoCantidad = slotOrigen.imagenItem.transform.GetChild(0).GetComponent<Text>();//Le asignamos el texo de origen ya que lo hemos intercambiado antes en las imagenes
             slotDestino.textoCantidad = slotDestino.imagenItem.transform.GetChild(0).GetComponent<Text>();
-        }        
+        }
     }
 
     private class InventoryWrapper
@@ -243,7 +259,7 @@ public class Inventario : MonoBehaviour
     {
         switch (obj.tag)
         {
-            case "Pocion_vida":                
+            case "Pocion_vida":
                 AddItem(1);
                 Destroy(obj.gameObject);
                 break;
@@ -251,9 +267,14 @@ public class Inventario : MonoBehaviour
                 AddItem(2);
                 Destroy(obj.gameObject);
                 break;
+            /*case "Llave":
+                InteraccionItems.llamar.inside = true;
+                break;*/
         }
     }
 
+
+    #region Pruebas
     [ContextMenu("Test Add - idItem = 1")]
     public void TestAdd()
     {
@@ -265,10 +286,10 @@ public class Inventario : MonoBehaviour
         AddItem(2);
     }
     [ContextMenu("Test Usar - idItem = 1")]
-    public void TestAdd3()
+    /*public void TestAdd3()
     {
         UsarItem(1);
-    }
+    }*/
     [ContextMenu("Test Remove - idItem = 1")]
     public void TestRemove()
     {
@@ -279,4 +300,6 @@ public class Inventario : MonoBehaviour
     {
         GuardarInventario();
     }
+    #endregion
+
 }

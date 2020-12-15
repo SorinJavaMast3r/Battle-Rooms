@@ -14,24 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listaItems:
   - id: 1
-    nombre: 
+    nombre: Pocion vida
     descripcion: 
     estaqueable: 1
     tipo: 0
+    estadisticas:
+      "da\xF1o": 0
+      mana: 0
+      defensa: 0
+    posicionScroll: {x: 0, y: 0}
+    imagenItem: {fileID: 21300000, guid: 273caa25308211642875f02a72e20eeb, type: 3}
+  - id: 2
+    nombre: Pocion mana
+    descripcion: 
+    estaqueable: 1
+    tipo: 0
+    estadisticas:
+      "da\xF1o": 0
+      mana: 0
+      defensa: 0
+    posicionScroll: {x: 0, y: 0}
+    imagenItem: {fileID: 21300000, guid: 1fac82a87de09ae4a8d4869a8757fd2a, type: 3}
+  - id: 3
+    nombre: Llave
+    descripcion: 
+    estaqueable: 0
+    tipo: 3
     estadisticas:
       "da\xF1o": 0
       mana: 0
       defensa: 0
     posicionScroll: {x: 0, y: 0}
     imagenItem: {fileID: 21300000, guid: d659f7396cd57754eba78763cf986c51, type: 3}
-  - id: 2
-    nombre: 
-    descripcion: 
-    estaqueable: 1
-    tipo: 0
-    estadisticas:
-      "da\xF1o": 0
-      mana: 0
-      defensa: 0
-    posicionScroll: {x: 0, y: 0}
-    imagenItem: {fileID: 21300000, guid: 8a5f9829a049c704fa992203bfc451f2, type: 3}

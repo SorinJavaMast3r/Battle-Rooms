@@ -26,15 +26,9 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerClickHandler //Esta int
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
-    {        
-        EnviarDatosClick(this.informacionSlot.idItem);
-        Debug.Log(this.informacionSlot.idItem);
-    }
-
-    public void EnviarDatosClick(int idItem)
     {
-        Inventario inventario = new Inventario();
-        inventario.UsarItem(idItem);
+        Debug.Log("Id item" + this.informacionSlot.idItem);
+        Inventario.llamar.UsarItem(this.informacionSlot.idItem, this.informacionSlot);        
     }
 
     //Metodo que nos permite actualizar la cantidad y la imagen de un item que se contiene en un slot
