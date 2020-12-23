@@ -35,7 +35,7 @@ public class InteraccionItems : MonoBehaviour
 				Inventario.llamar.AddItem(1);
 				Destroy(obj.gameObject);
 				break;
-			case "Pocion_quita_vida":
+			case "Pocion_mana":
 				Inventario.llamar.AddItem(2);
 				Destroy(obj.gameObject);
 				break;*/

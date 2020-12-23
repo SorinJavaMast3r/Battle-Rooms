@@ -263,7 +263,7 @@ public class Inventario : MonoBehaviour
                 AddItem(1);
                 Destroy(obj.gameObject);
                 break;
-            case "Pocion_quita_vida":
+            case "Pocion_mana":
                 AddItem(2);
                 Destroy(obj.gameObject);
                 break;

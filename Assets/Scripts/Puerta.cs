@@ -39,7 +39,6 @@ public class Puerta : MonoBehaviour
 		if (door)
 		{
 			anim.SetBool("abierto", true);
-			//Inventario.llamar.RemoveItem(3);
 		}
 	}
 }
