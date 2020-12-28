@@ -11,6 +11,7 @@ TagManager:
   - FxTemporaire
   - Corazon
   - Pocion_mana
+  - Cofre
   layers:
   - Default
   - TransparentFX
