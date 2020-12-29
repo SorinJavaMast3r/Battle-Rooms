@@ -8465,7 +8465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f335aaec5bd6bc4594e9e774c383af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1429355272}
   offset: {x: 0, y: -0.3, z: 0.5}
   zoomSpeed: 4
   minZoom: 5
@@ -22997,6 +22997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c18b13ca88400d947b4e781e31684591, type: 3}
+--- !u!4 &1429355272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 642653653135825454, guid: c18b13ca88400d947b4e781e31684591, type: 3}
+  m_PrefabInstance: {fileID: 1429355271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1472710657
 PrefabInstance:
   m_ObjectHideFlags: 0
