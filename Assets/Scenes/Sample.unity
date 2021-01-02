@@ -186,8 +186,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3167934112681810278, guid: 69852a3dffc52c74bb80df181d232f68, type: 3}
+    - {fileID: 3167934112681810281, guid: 69852a3dffc52c74bb80df181d232f68, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69852a3dffc52c74bb80df181d232f68, type: 3}
+--- !u!1 &253837362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2825914876000140076, guid: 69852a3dffc52c74bb80df181d232f68, type: 3}
+  m_PrefabInstance: {fileID: 253837361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &253837363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253837362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae4aafd3558b5479e9da5a26fa18aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  horizontal: 0
+  vertical: 0
+  attack: 0
+  jump: 0
+  die: 0
+  run: 0
+  dead: 0
+  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!1 &707511911
 GameObject:
   m_ObjectHideFlags: 0
