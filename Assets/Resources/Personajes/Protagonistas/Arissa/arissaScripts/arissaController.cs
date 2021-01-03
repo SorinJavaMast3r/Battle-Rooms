@@ -14,9 +14,10 @@ public class arissaController : MonoBehaviour
     private Animator anim;
 
     public float 
-        speed = 5.0f, 
-        horizontal = 0.0f, 
-        vertical = 0.0f;
+        speed = 1.0f,
+        rotationSpeed = 30.0f,
+        x = 0.0f, 
+        y = 0.0f;
 
     public bool 
         attack = false,
@@ -24,7 +25,7 @@ public class arissaController : MonoBehaviour
         jump = false,  //TODO: ?
         die = false, 
         run = false,
-        dead = false; // TODO:
+        dead = false; 
 
     public Vector3 moveDirection = Vector3.zero;
     void Start()
@@ -34,8 +35,9 @@ public class arissaController : MonoBehaviour
 
     void Update()
     {
-		if (dead)
-		{
+        
+		if (dead) // Si está muerto, hace animación de muerte y no hace nada más
+        {
 			if (die)
 			{
                 anim.SetBool(anim_die, true);
@@ -43,32 +45,54 @@ public class arissaController : MonoBehaviour
 			}
             return;
         }
-        if (Input.GetKeyDown(KeyCode.C))
+        // Si pasa de aquí el personaje está vivo
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !attack)
         {
             attack = true;
+            anim.SetBool(anim_attack, attack);
         }
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             attack = false;
-        }
-        anim.SetBool(anim_attack, attack);
-        if (Input.GetKeyDown(KeyCode.K))
+            anim.SetBool(anim_attack, attack);
+        } // Disparo con arco
+        
+        if (Input.GetKeyDown(KeyCode.Mouse2) && !melee)
         {
             melee = true;
+            anim.SetBool(anim_melee, melee);
         }
-        if (Input.GetKeyUp(KeyCode.K))
+        if (Input.GetKeyUp(KeyCode.Mouse2))
         {
             melee = false;
-        }
-        anim.SetBool(anim_melee, melee);
+            anim.SetBool(anim_melee, melee);
+        } // Patada
+        
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            speed = 3.0f;
+            rotationSpeed = 45.0f;
             run = true;
-        }
+            anim.SetBool(anim_run, run);
+        } 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            speed = 1.0f;
+            rotationSpeed = 30.0f;
             run = false;
-        }
-        anim.SetBool(anim_run, run);
+            anim.SetBool(anim_run, run);
+        } // Correr
     }
+
+	private void FixedUpdate()
+	{
+        x = Input.GetAxis("Horizontal");
+        y = Input.GetAxis("Vertical");
+        // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)
+        transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+        transform.Translate(0, 0, y * Time.deltaTime * speed);
+
+        anim.SetFloat(anim_horiz, x);
+        anim.SetFloat(anim_vert, y);
+	}
 }
