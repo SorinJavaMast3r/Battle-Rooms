@@ -46,7 +46,7 @@ public class arissaController : MonoBehaviour
             return;
         }
         // Si pasa de aquí el personaje está vivo
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !attack)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !attack && !run)
         {
             attack = true;
             anim.SetBool(anim_attack, attack);
@@ -57,7 +57,7 @@ public class arissaController : MonoBehaviour
             anim.SetBool(anim_attack, attack);
         } // Disparo con arco
         
-        if (Input.GetKeyDown(KeyCode.Mouse2) && !melee)
+        if (Input.GetKeyDown(KeyCode.Mouse2) && !melee && !run)
         {
             melee = true;
             anim.SetBool(anim_melee, melee);
@@ -70,8 +70,8 @@ public class arissaController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 5.0f;
-            rotationSpeed = 80.0f;
+            speed = 8.0f;
+            rotationSpeed = 110.0f;
             run = true;
             anim.SetBool(anim_run, run);
         } 
