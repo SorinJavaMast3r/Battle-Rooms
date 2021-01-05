@@ -68,7 +68,7 @@ public class arissaController : MonoBehaviour
             anim.SetBool(anim_melee, melee);
         } // Patada
         
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee)
         {
             speed = 8.0f;
             rotationSpeed = 110.0f;
