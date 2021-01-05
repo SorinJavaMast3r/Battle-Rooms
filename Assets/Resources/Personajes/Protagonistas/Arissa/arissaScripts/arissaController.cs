@@ -12,19 +12,20 @@ public class arissaController : MonoBehaviour
                          anim_die = "die",
                          anim_run = "run";
     private Animator anim;
-
+    public int frames = 0;
     public float 
-        speed = 1.0f,
-        rotationSpeed = 30.0f,
+        speed = 2.0f,
+        rotationSpeed = 60.0f,
         x = 0.0f, 
         y = 0.0f;
 
-    public bool 
+    public bool
         attack = false,
         melee = false,
         jump = false,  //TODO: ?
-        die = false, 
+        die = false,
         run = false,
+        val = false,
         dead = false; 
 
     public Vector3 moveDirection = Vector3.zero;
@@ -38,9 +39,9 @@ public class arissaController : MonoBehaviour
         
 		if (dead) // Si está muerto, hace animación de muerte y no hace nada más
         {
-			if (die)
+            if (die)
 			{
-                anim.SetBool(anim_die, true);
+                anim.SetBool(anim_die, die);
                 die = !die;
 			}
             return;
@@ -70,15 +71,15 @@ public class arissaController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 3.0f;
-            rotationSpeed = 45.0f;
+            speed = 5.0f;
+            rotationSpeed = 80.0f;
             run = true;
             anim.SetBool(anim_run, run);
         } 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 1.0f;
-            rotationSpeed = 30.0f;
+            speed = 2.0f;
+            rotationSpeed = 60.0f;
             run = false;
             anim.SetBool(anim_run, run);
         } // Correr
