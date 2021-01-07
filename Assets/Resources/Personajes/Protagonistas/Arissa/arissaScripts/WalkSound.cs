@@ -11,6 +11,7 @@ public class WalkSound : MonoBehaviour
 		if (col.gameObject.tag == "Terrain")
 		{
 			foot.Play();
+			foot.volume = 0.05f;
 		}
 	}
 }
