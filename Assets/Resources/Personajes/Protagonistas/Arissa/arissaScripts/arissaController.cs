@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class arissaController : MonoBehaviour
 {
+    #region Prop menu pausa
+    public bool MenuPausaActivo;
+    public GameObject MenuPausa;
+    public static arissaController instanciar;
+    #endregion
+
     private const string anim_speed = "speed",
                          anim_horiz = "horizontal",
                          anim_vert = "vertical",
@@ -28,60 +34,71 @@ public class arissaController : MonoBehaviour
         dead = false; 
 
     public Vector3 moveDirection = Vector3.zero;
+
+    public void Awake()
+    {
+        instanciar = this;
+    }
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        Sonido.llamar.PlayAmbientSound();//Cambiar cuando esten los sonidos del juego
     }
 
     void Update()
     {
-        
-		if (dead) // Si está muerto, hace animación de muerte y no hace nada más
+        AbrirMenuPausa();
+
+        if (!MenuPausaActivo)
         {
-            if (die)
-			{
-                anim.SetBool(anim_die, die);
-                die = !die;
-			}
-            return;
-        }
-        // Si pasa de aquí el personaje está vivo
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !attack && !run)
-        {
-            attack = true;
-            anim.SetBool(anim_attack, attack);
-        }
-        if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            attack = false;
-            anim.SetBool(anim_attack, attack);
-        } // Disparo con arco
-        
-        if (Input.GetKeyDown(KeyCode.Mouse2) && !melee && !run)
-        {
-            melee = true;
-            anim.SetBool(anim_melee, melee);
-        }
-        if (Input.GetKeyUp(KeyCode.Mouse2))
-        {
-            melee = false;
-            anim.SetBool(anim_melee, melee);
-        } // Patada
-        
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee)
-        {
-            speed = 8.0f;
-            rotationSpeed = 110.0f;
-            run = true;
-            anim.SetBool(anim_run, run);
-        } 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            speed = 2.0f;
-            rotationSpeed = 60.0f;
-            run = false;
-            anim.SetBool(anim_run, run);
-        } // Correr
+            if (dead) // Si está muerto, hace animación de muerte y no hace nada más
+            {
+                if (die)
+                {
+                    anim.SetBool(anim_die, die);
+                    die = !die;
+                }
+                return;
+            }
+            // Si pasa de aquí el personaje está vivo
+            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack && !run)
+            {
+                attack = true;
+                anim.SetBool(anim_attack, attack);
+            }
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                attack = false;
+                anim.SetBool(anim_attack, attack);
+            } // Disparo con arco
+
+            if (Input.GetKeyDown(KeyCode.Mouse2) && !melee && !run)
+            {
+                melee = true;
+                anim.SetBool(anim_melee, melee);
+            }
+            if (Input.GetKeyUp(KeyCode.Mouse2))
+            {
+                melee = false;
+                anim.SetBool(anim_melee, melee);
+            } // Patada
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee)
+            {
+                speed = 8.0f;
+                rotationSpeed = 110.0f;
+                run = true;
+                anim.SetBool(anim_run, run);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 2.0f;
+                rotationSpeed = 60.0f;
+                run = false;
+                anim.SetBool(anim_run, run);
+            } // Correr
+        }        
     }
 
 	private void FixedUpdate()
@@ -95,4 +112,23 @@ public class arissaController : MonoBehaviour
         anim.SetFloat(anim_horiz, x);
         anim.SetFloat(anim_vert, y);
 	}
+
+    public void AbrirMenuPausa()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            MenuPausaActivo = !MenuPausaActivo;
+
+            if (MenuPausaActivo)
+            {
+                Sonido.llamar.PlayMusic();
+                MenuPausa.gameObject.SetActive(true);
+            }
+            else
+            {
+                MenuPausa.gameObject.SetActive(false);
+                Sonido.llamar.StopMusic();
+            }
+        }
+    }
 }
