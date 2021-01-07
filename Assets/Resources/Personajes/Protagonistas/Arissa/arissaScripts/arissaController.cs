@@ -34,7 +34,6 @@ public class arissaController : MonoBehaviour
         die = false,
         run = false,
         val = false,
-        andando = false,
         dead = false; 
 
     public Vector3 moveDirection = Vector3.zero;
@@ -68,8 +67,16 @@ public class arissaController : MonoBehaviour
                 }
                 return;
             }
-			
+
             // Si pasa de aquí el personaje está vivo
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                audioWalk.Play();
+            }
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                audioWalk.Stop();
+            }
             if (Input.GetKeyDown(KeyCode.Mouse0) && !attack && !run)
             {
                 attack = true;
@@ -104,21 +111,15 @@ public class arissaController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 audioRun.Stop();
+                if (y != 0)
+				{
+                    audioWalk.Play();
+				}
                 speed = 2.0f;
                 rotationSpeed = 60.0f;
                 run = false;
                 anim.SetBool(anim_run, run);
             } // Correr
-            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S)))
-			{
-                audioWalk.Play();
-			}
-            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
-			{
-                audioWalk.Stop();
-			}
-
-
         }        
     }
 
