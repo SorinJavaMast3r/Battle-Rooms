@@ -18,6 +18,9 @@ public class arissaController : MonoBehaviour
                          anim_die = "die",
                          anim_run = "run";
     private Animator anim;
+    public AudioSource audioRun;
+    [Range(0.00f, 1.00f)]
+    public float runVolume;
     public float 
         speed = 2.0f,
         rotationSpeed = 60.0f,
@@ -43,13 +46,14 @@ public class arissaController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        //Cuando animemos la muerte mirar linea 47
         Sonido.llamar.PlayAmbientSound();//Cambiar cuando esten los sonidos del juego
     }
 
     void Update()
     {
+        audioRun.volume = runVolume;
         AbrirMenuPausa();
-
         if (!MenuPausaActivo)
         {
             if (dead) // Si está muerto, hace animación de muerte y no hace nada más
@@ -86,6 +90,7 @@ public class arissaController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee)
             {
+                audioRun.Play();           
                 speed = 8.0f;
                 rotationSpeed = 110.0f;
                 run = true;
@@ -93,6 +98,7 @@ public class arissaController : MonoBehaviour
             }
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
+                audioRun.Stop();
                 speed = 2.0f;
                 rotationSpeed = 60.0f;
                 run = false;
