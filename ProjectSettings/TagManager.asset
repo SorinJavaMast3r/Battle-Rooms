@@ -8,6 +8,10 @@ TagManager:
   - Tag
   - Arco
   - Terrain
+  - MenuPausa
+  - SliderEfectos
+  - Puerta
+  - Escalera
   layers:
   - Default
   - TransparentFX

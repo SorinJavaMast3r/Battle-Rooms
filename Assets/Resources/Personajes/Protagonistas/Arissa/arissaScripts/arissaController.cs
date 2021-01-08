@@ -152,4 +152,9 @@ public class arissaController : MonoBehaviour
             }
         }
     }
+
+	public void OnTriggerEnter(Collider obj)
+	{
+        Debug.Log("ESTÁ COLISIONANDO CON: " + obj.tag);
+	}
 }

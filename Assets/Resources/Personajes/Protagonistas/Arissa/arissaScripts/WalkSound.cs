@@ -11,6 +11,7 @@ public class WalkSound : MonoBehaviour
 
 	private void OnTriggerEnter(Collider col)
 	{
+		Debug.Log("ESTA CHOCANDO CON: " +  col.tag);
 		if (col.gameObject.tag == "Terrain")
 		{
 			foot.Play();
