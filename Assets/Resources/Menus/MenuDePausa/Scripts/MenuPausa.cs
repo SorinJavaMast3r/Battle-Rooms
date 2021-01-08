@@ -8,7 +8,6 @@ public class MenuPausa : MonoBehaviour
     public Slider musica;
     public Slider efectos;
     public Slider sonidoAmbiente;
-    public GameObject menu_Pausa;
 
     public void Continuar()
     {
