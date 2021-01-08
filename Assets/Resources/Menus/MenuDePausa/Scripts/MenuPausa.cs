@@ -12,7 +12,7 @@ public class MenuPausa : MonoBehaviour
 
     public void Continuar()
     {
-        menu_Pausa.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
         Sonido.llamar.StopMusic();
         arissaController.instanciar.MenuPausaActivo = false;
     }
