@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f965a2a540d6a41ac52477692f928d, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  listaItems:
+  - id: 1
+    nombre: Pocion vida
+    descripcion: 
+    estaqueable: 1
+    tipo: 0
+    estadisticas:
+      "da\xF1o": 0
+      mana: 0
+      defensa: 0
+    posicionScroll: {x: 0, y: 0}
+    imagenItem: {fileID: 21300000, guid: 273caa25308211642875f02a72e20eeb, type: 3}
+  - id: 2
+    nombre: Pocion mana
+    descripcion: 
+    estaqueable: 1
+    tipo: 0
+    estadisticas:
+      "da\xF1o": 0
+      mana: 0
+      defensa: 0
+    posicionScroll: {x: 0, y: 0}
+    imagenItem: {fileID: 21300000, guid: 1fac82a87de09ae4a8d4869a8757fd2a, type: 3}
+  - id: 3
+    nombre: Llave
+    descripcion: 
+    estaqueable: 0
+    tipo: 3
+    estadisticas:
+      "da\xF1o": 0
+      mana: 0
+      defensa: 0
+    posicionScroll: {x: 0, y: 0}
+    imagenItem: {fileID: 21300000, guid: d659f7396cd57754eba78763cf986c51, type: 3}

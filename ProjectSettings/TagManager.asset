@@ -8,6 +8,13 @@ TagManager:
   - Tag
   - Arco
   - Terrain
+  - MenuPausa
+  - SliderEfectos
+  - Pocion_mana
+  - Pocion_vida
+  - Cofre
+  - Llave
+  - Puerta
   layers:
   - Default
   - TransparentFX
