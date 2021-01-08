@@ -18,9 +18,9 @@ public class arissaController : MonoBehaviour
                          anim_die = "die",
                          anim_run = "run";
     private Animator anim;
-    public AudioSource audioRun;
+    public AudioSource audioRun, audioWalk;
     [Range(0.00f, 1.00f)]
-    public float runVolume;
+    public float runVolume, walkVolume;
     public float 
         speed = 2.0f,
         rotationSpeed = 60.0f,
@@ -45,6 +45,8 @@ public class arissaController : MonoBehaviour
 
     void Start()
     {
+        audioRun.volume = runVolume;
+        audioWalk.volume = walkVolume;
         anim = GetComponent<Animator>();
         //Cuando animemos la muerte mirar linea 47
         Sonido.llamar.PlayAmbientSound();//Cambiar cuando esten los sonidos del juego
@@ -52,7 +54,7 @@ public class arissaController : MonoBehaviour
 
     void Update()
     {
-        audioRun.volume = runVolume;
+        
         AbrirMenuPausa();
         if (!MenuPausaActivo)
         {
@@ -65,7 +67,16 @@ public class arissaController : MonoBehaviour
                 }
                 return;
             }
+
             // Si pasa de aquí el personaje está vivo
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                audioWalk.Play();
+            }
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                audioWalk.Stop();
+            }
             if (Input.GetKeyDown(KeyCode.Mouse0) && !attack && !run)
             {
                 attack = true;
@@ -88,8 +99,9 @@ public class arissaController : MonoBehaviour
                 anim.SetBool(anim_melee, melee);
             } // Patada
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && !melee && y > 0)
             {
+                audioWalk.Stop();
                 audioRun.Play();           
                 speed = 8.0f;
                 rotationSpeed = 110.0f;
@@ -99,6 +111,10 @@ public class arissaController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 audioRun.Stop();
+                if (y != 0)
+				{
+                    audioWalk.Play();
+				}
                 speed = 2.0f;
                 rotationSpeed = 60.0f;
                 run = false;
@@ -114,10 +130,9 @@ public class arissaController : MonoBehaviour
         // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)
         transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
         transform.Translate(0, 0, y * Time.deltaTime * speed);
-
         anim.SetFloat(anim_horiz, x);
         anim.SetFloat(anim_vert, y);
-	}
+    }
 
     public void AbrirMenuPausa()
     {
