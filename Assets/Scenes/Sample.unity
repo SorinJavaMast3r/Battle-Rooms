@@ -685,14 +685,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 982413211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf1473c7f736a4b448e2383bfdf00825, type: 3}
+  m_Script: {fileID: 11500000, guid: bf0b707a6323741449ad9d45b3b561a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
-  rotationSpeed: 250
-  anim: {fileID: 1152987356}
+  audioRun: {fileID: 0}
+  audioWalk: {fileID: 0}
+  audioAttack1: {fileID: 0}
+  audioAttack2: {fileID: 0}
+  audioDeath: {fileID: 0}
+  audioKick: {fileID: 0}
+  runVolume: 0.05
+  walkVolume: 0.05
+  attackVolume: 0.05
+  kickVolume: 0.05
+  deathVolume: 0.05
+  speed: 1.5
+  rotationSpeed: 60
   x: 0
   y: 0
+  attack1: 0
+  attack2: 0
+  kick: 0
+  die: 0
+  run: 0
+  dead: 0
+  changeAttack: 0
 --- !u!4 &982413215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7bfd5f6bdb65c604689ffec7bfd44794, type: 3}
@@ -767,11 +784,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bfd5f6bdb65c604689ffec7bfd44794, type: 3}
---- !u!95 &1152987356 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 7bfd5f6bdb65c604689ffec7bfd44794, type: 3}
-  m_PrefabInstance: {fileID: 1152987355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1976859836
 GameObject:
   m_ObjectHideFlags: 0
