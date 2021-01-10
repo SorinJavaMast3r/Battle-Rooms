@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class arissaController : MonoBehaviour
 {
-    #region Prop menu pausa
-    public bool MenuPausaActivo;
-    public GameObject MenuPausa;
-    public static arissaController instanciar;
-    #endregion
-
     private const string anim_speed = "speed",
                          anim_horiz = "horizontal",
                          anim_vert = "vertical",
@@ -38,25 +32,17 @@ public class arissaController : MonoBehaviour
 
     public Vector3 moveDirection = Vector3.zero;
 
-    public void Awake()
-    {
-        instanciar = this;
-    }
-
     void Start()
     {
         audioRun.volume = runVolume;
         audioWalk.volume = walkVolume;
         anim = GetComponent<Animator>();
         //Cuando animemos la muerte mirar linea 47
-        Sonido.llamar.PlayAmbientSound();//Cambiar cuando esten los sonidos del juego
     }
 
     void Update()
     {
-        
-        AbrirMenuPausa();
-        if (!MenuPausaActivo)
+        if (!AbrirMenu.instanciar.MenuPausaActivo)
         {
             if (dead) // Si está muerto, hace animación de muerte y no hace nada más
             {
@@ -132,26 +118,5 @@ public class arissaController : MonoBehaviour
         transform.Translate(0, 0, y * Time.deltaTime * speed);
         anim.SetFloat(anim_horiz, x);
         anim.SetFloat(anim_vert, y);
-    }
-
-    public void AbrirMenuPausa()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            MenuPausaActivo = !MenuPausaActivo;
-
-            if (MenuPausaActivo)
-            {
-                Sonido.llamar.PlayMusic();
-                MenuPausa.gameObject.SetActive(true);
-            }
-            else
-            {
-                MenuPausa.gameObject.SetActive(false);
-                Sonido.llamar.StopMusic();
-            }
-        }
-    }
-
-	
+    }	
 }

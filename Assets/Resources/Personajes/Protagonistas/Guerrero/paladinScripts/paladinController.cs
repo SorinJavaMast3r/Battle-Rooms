@@ -31,8 +31,7 @@ public class paladinController : MonoBehaviour
         dead = false,
         changeAttack = false;
 
-	// TODO: Awake() --> Adri
-	void Start()
+    void Start()
     {
         anim = GetComponent<Animator>();
         audioRun.volume = runVolume;
@@ -40,90 +39,92 @@ public class paladinController : MonoBehaviour
         audioAttack1.volume = attackVolume;
         audioAttack2.volume = attackVolume;
         audioKick.volume = kickVolume;
-        audioDeath.volume = deathVolume;
-        // TODO: PlayAmbientSound() --> Adri
+        audioDeath.volume = deathVolume;        
     }
 
     void Update()
     {
-		// TODO: AbrirMenuPausa(); --> Adri
-		if (dead)
-		{
-            if (die)
-			{
-                anim.SetBool(anim_die, die);
-                die = !die;
-			}
-            return;
-		}
+        if (!AbrirMenu.instanciar.MenuPausaActivo)
+        {
+            if (dead)
+            {
+                if (die)
+                {
+                    anim.SetBool(anim_die, die);
+                    die = !die;
+                }
+                return;
+            }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            audioWalk.Play();
-        } // Reproducir sonido de los pasos cuando camina.
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            audioWalk.Stop();
-        } // Parar el sonido de los pasos cuando camina.
-		if (!changeAttack)
-		{
-            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
-            {
-                attack1 = true;
-                anim.SetBool(anim_attack1, attack1);
-                changeAttack = true;
-            }
-            if (Input.GetKeyUp(KeyCode.Mouse0))
-            {
-                attack1 = false;
-                anim.SetBool(anim_attack1, attack1);
-            } // Animación del golpe de espada nº1
-        } 
-        else
-		{
-            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
-            {
-                attack2 = true;
-                anim.SetBool(anim_attack2, attack2);
-                changeAttack = false;
-            }
-            if (Input.GetKeyUp(KeyCode.Mouse0))
-            {
-                attack2 = false;
-                anim.SetBool(anim_attack2, attack2);
-            } // Animación del golpe de espada nº2.
-        } // Máquina de estado de ataque para alternar las dos animaciones de golpe de espada. l68 - l95
-        if (Input.GetKeyDown(KeyCode.Mouse2) && !kick && !run)
-        {
-            kick = true;
-            anim.SetBool(anim_kick, kick);
-        }
-        if (Input.GetKeyUp(KeyCode.Mouse2))
-        {
-            kick = false;
-            anim.SetBool(anim_kick, kick);
-        } // Animación de la patada
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !attack1 && !attack2 && !kick && y > 0)
-        {
-            audioWalk.Stop();
-            audioRun.Play();
-            speed = 4.5f; // Más lento que los demás por la armadura.
-            rotationSpeed = 110.0f;
-            run = true;
-            anim.SetBool(anim_run, run);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            audioRun.Stop();
-            if (y != 0)
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 audioWalk.Play();
+            } // Reproducir sonido de los pasos cuando camina.
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                audioWalk.Stop();
+            } // Parar el sonido de los pasos cuando camina.
+            if (!changeAttack)
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
+                {
+                    attack1 = true;
+                    anim.SetBool(anim_attack1, attack1);
+                    changeAttack = true;
+                }
+                if (Input.GetKeyUp(KeyCode.Mouse0))
+                {
+                    attack1 = false;
+                    anim.SetBool(anim_attack1, attack1);
+                } // Animación del golpe de espada nº1
             }
-            speed = 1.5f;
-            rotationSpeed = 60.0f;
-            run = false;
-            anim.SetBool(anim_run, run);
-        } // Animación de correr
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
+                {
+                    attack2 = true;
+                    anim.SetBool(anim_attack2, attack2);
+                    changeAttack = false;
+                }
+                if (Input.GetKeyUp(KeyCode.Mouse0))
+                {
+                    attack2 = false;
+                    anim.SetBool(anim_attack2, attack2);
+                } // Animación del golpe de espada nº2.
+            } // Máquina de estado de ataque para alternar las dos animaciones de golpe de espada. l68 - l95
+            if (Input.GetKeyDown(KeyCode.Mouse2) && !kick && !run)
+            {
+                kick = true;
+                anim.SetBool(anim_kick, kick);
+            }
+            if (Input.GetKeyUp(KeyCode.Mouse2))
+            {
+                kick = false;
+                anim.SetBool(anim_kick, kick);
+            } // Animación de la patada
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack1 && !attack2 && !kick && y > 0)
+            {
+                audioWalk.Stop();
+                audioRun.Play();
+                speed = 4.5f; // Más lento que los demás por la armadura.
+                rotationSpeed = 110.0f;
+                run = true;
+                anim.SetBool(anim_run, run);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                audioRun.Stop();
+                if (y != 0)
+                {
+                    audioWalk.Stop();
+                    audioWalk.Play();
+                }
+                speed = 1.5f;
+                rotationSpeed = 60.0f;
+                run = false;
+                anim.SetBool(anim_run, run);
+            } // Animación de correr
+        }
     }
     private void FixedUpdate()
     {
@@ -135,6 +136,4 @@ public class paladinController : MonoBehaviour
         anim.SetFloat(anim_horiz, x);
         anim.SetFloat(anim_vert, y);
     }
-
-    // TODO: public void AbrirMenuPausa() --> Adri
 }
