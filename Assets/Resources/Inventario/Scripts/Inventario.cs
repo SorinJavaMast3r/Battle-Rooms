@@ -73,8 +73,8 @@ public class Inventario : MonoBehaviour
         {
             //Vamos a crear el objeto que va a tener que llevar esto en la escena
             GameObject slot = Instantiate<GameObject>(slotPrefab, PanelInventario);//le pasa como padre este transform
-            Slot nSlot = slot.GetComponent<Slot>();//Estraemos el codigo del slot. Con esto podemos utilizar las cosas de la clase slot
-            nSlot.SetUp(i);//Hacedemos al SetUp del slot y le pasamos la i como id
+            Slot nSlot = slot.GetComponent<Slot>();//Extraemos el codigo del slot. Con esto podemos utilizar las cosas de la clase slot
+            nSlot.SetUp(i);//Acccedemos al SetUp del slot y le pasamos la i como id
             nSlot.database = database;//Asignamos a cada slot la base de datos
             InformacionSlot ninformacionSlot = nSlot.informacionSlot; // creamos un objeto de la clase informacionSlot con el SetUp hecho 
             listaInformacionSlot.Add(ninformacionSlot);//Añadimos el slot al inventario
