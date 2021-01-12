@@ -40,10 +40,15 @@ public class InteraccionItems : MonoBehaviour
 				inside = true;
 				break;
 			case "Corazon":
-				Player.vida += 1.0f;
-				particulaCorazon.Play();
-				Destroy(obj.gameObject);
+				PlayerStats ps = this.GetComponent<PlayerStats>();
+				if (!(ps.currentHP == ps.maxHP))
+                {
+					particulaCorazon.Play();
+					ps.increaseHP(50);
+					Destroy(obj.gameObject);
+				}
 				break;
+
 		}
 	}
 
@@ -57,14 +62,7 @@ public class InteraccionItems : MonoBehaviour
     #endregion
 
     #region Uso de objetos
-    public void PocionVida()
-	{
-		Player.vida++;
-	}
-	public void PocionMana()
-	{
-		Player.mana++;
-	}
+    
 	public void UsarLlave()
 	{
 		if (inside && Input.GetKeyDown(KeyCode.E))

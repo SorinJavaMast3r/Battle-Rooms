@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - Wall
   - Tag
   - Arco
@@ -13,9 +12,12 @@ TagManager:
   - SliderEfectos
   - Puerta
   - Escalera
-=======
-  - Fire
->>>>>>> Protagonistas
+  - Pocion_vida
+  - FxTemporaire
+  - Pocion_mana
+  - Cofre
+  - Llave
+  - Corazon
   layers:
   - Default
   - TransparentFX

@@ -29,10 +29,6 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-            decreaseHP(100);
-        else if (Input.GetMouseButtonDown(1))
-            increaseHP(200);
 
     }
 

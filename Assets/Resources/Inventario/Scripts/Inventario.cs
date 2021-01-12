@@ -190,15 +190,15 @@ public class Inventario : MonoBehaviour
     public void UsarItem(int idItem, InformacionSlot informacionSlot)
     {
         Item item = database.FindItemInDatabase(idItem);
-        InteraccionItems interaccion = new InteraccionItems();
+        PlayerStats ps = this.GetComponent<PlayerStats>();
         if (item != null)//Si el item existe en la base de datos hace lo siguiente
         {
             if (item.tipo == Item.TipoDeItem.consumible)
             {
                 switch (idItem)
                 {
-                    case 1: interaccion.PocionVida(); break;
-                    case 2: interaccion.PocionMana(); break;
+                    case 1: ps.increaseHP(15); break;
+                    case 2: ps.increaseMP(20); break;
                 }
             }
             if (item.tipo == Item.TipoDeItem.otro)

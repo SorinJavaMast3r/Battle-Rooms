@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.15376459, g: 0.19051756, b: 0.25215644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5564,6 +5564,14 @@ PrefabInstance:
     - target: {fileID: 1113412834005990641, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966481051638449319, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
+      propertyPath: currentHP
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966481051638449319, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
+      propertyPath: currentMP
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
@@ -30486,6 +30494,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3181466640469350161, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+      propertyPath: maxHP
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181466640469350161, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+      propertyPath: currentHP
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181466640469350161, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+      propertyPath: maxMP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181466640469350161, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+      propertyPath: currentMP
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4303753138421939896, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
       propertyPath: m_Name
       value: Paladin
