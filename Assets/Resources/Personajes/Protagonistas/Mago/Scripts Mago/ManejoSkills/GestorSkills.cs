@@ -30,8 +30,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "q";
-            transform.parent.GetComponent<AnimationStateController>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateController>().velocidadMovimiento = 0;
+            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
+            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
             abilityTime = Time.time + 2.0f;
         }
 
@@ -41,8 +41,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "e";
-            transform.parent.GetComponent<AnimationStateController>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateController>().velocidadMovimiento = 0;
+            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
+            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
             abilityTime = Time.time + 3.5f;
         }
 
@@ -52,8 +52,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "r";
-            transform.parent.GetComponent<AnimationStateController>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateController>().velocidadMovimiento = 0;
+            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
+            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
             abilityTime = Time.time + 2.0f;
         }
     }
@@ -62,8 +62,8 @@ public class GestorSkills : MonoBehaviour
     {
         if(Time.time > abilityTime)
         {
-            transform.parent.GetComponent<AnimationStateController>().setInterpolacion(10);
-            transform.parent.GetComponent<AnimationStateController>().velocidadMovimiento = 5.0f;
+            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(10);
+            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 5.0f;
         }
 
         if (animationExit && Time.time > animationStartTime)
