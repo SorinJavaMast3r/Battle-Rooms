@@ -15,55 +15,92 @@ public class GestorSkills : MonoBehaviour
     public Skill energyBall;
     public Skill rayo;
     public Skill earthSmash;
+    public GameObject player;
+
+    private bool ataque;
+    private float velocidad, velocidadGiro;
+    private AnimationStateControllerMago controladorMago;
+
     // Start is called before the first frame update
     void Start()
     {
-        this.animator = transform.parent.GetComponent<Animator>();
+        this.animator = player.GetComponent<Animator>();
+        controladorMago = player.GetComponent<AnimationStateControllerMago>();
+        velocidad = controladorMago.speed;
+        velocidadGiro = controladorMago.rotationSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
         {
-            this.animator.Play("First Magic Attack");
+            ataque = true;
+
+            this.animator.SetBool("firstMagicAttack", ataque);
+            
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "q";
-            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
+            controladorMago.speed = 0;
+            controladorMago.rotationSpeed = 0;
             abilityTime = Time.time + 2.0f;
+
+            this.animator.SetFloat("cooldown", 200f);
+        }
+        
+        this.animator.SetFloat("cooldown", this.animator.GetFloat("cooldown") - 1f);
+        
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            ataque = false;
+            this.animator.SetBool("firstMagicAttack", ataque);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
         {
-            this.animator.Play("Second Magic Attack");
+            this.animator.SetBool("secondMagicAttack", true);
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "e";
-            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
+            controladorMago.speed = 0;
+            controladorMago.rotationSpeed = 0;
             abilityTime = Time.time + 3.5f;
+
+            this.animator.SetFloat("cooldown", 200f);
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.E))
         {
-            this.animator.Play("Third Magic Attack");
+            this.animator.SetBool("secondMagicAttack", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
+        {
+            this.animator.SetBool("thirdMagicAttack", true);
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "r";
-            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(0);
-            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 0;
+            controladorMago.speed = 0;
+            controladorMago.rotationSpeed = 0;
             abilityTime = Time.time + 2.0f;
+
+            this.animator.SetFloat("cooldown", 200f);
         }
+
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            this.animator.SetBool("thirdMagicAttack", false);
+        }
+
     }
 
     void FixedUpdate()
     {
         if(Time.time > abilityTime)
         {
-            transform.parent.GetComponent<AnimationStateControllerMago>().setInterpolacion(10);
-            transform.parent.GetComponent<AnimationStateControllerMago>().velocidadMovimiento = 5.0f;
+            controladorMago.speed = velocidad;
+            controladorMago.rotationSpeed = velocidadGiro;
         }
 
         if (animationExit && Time.time > animationStartTime)
