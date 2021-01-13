@@ -9,7 +9,11 @@ public class AnimationStateControllerMago : MonoBehaviour
 
     public float
         speed = 2.0f,
+        runSpeed = 8.0f,
+        velocidad,
         rotationSpeed = 60.0f,
+        runningRotationSpeed = 110.0f,
+        velocidadGiro,
         x = 0.0f,
         y = 0.0f;
 
@@ -73,8 +77,8 @@ public class AnimationStateControllerMago : MonoBehaviour
             {
                 //audioWalk.Stop();
                 //audioRun.Play();
-                speed = 8.0f;
-                rotationSpeed = 110.0f;
+                velocidad = runSpeed;
+                velocidadGiro = runningRotationSpeed;
                 run = true;
                 animator.SetBool(anim_run, run);
             }
@@ -85,8 +89,8 @@ public class AnimationStateControllerMago : MonoBehaviour
                 //{
                 //    audioWalk.Play();
                 //}
-                speed = 2.0f;
-                rotationSpeed = 60.0f;
+                velocidad = speed;
+                velocidad = rotationSpeed;
                 run = false;
                 animator.SetBool(anim_run, run);
             } // Correr
@@ -98,8 +102,8 @@ public class AnimationStateControllerMago : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
         // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)
-        transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
-        transform.Translate(0, 0, y * Time.deltaTime * speed);
+        transform.Rotate(0, x * Time.deltaTime * velocidadGiro, 0);
+        transform.Translate(0, 0, y * Time.deltaTime * velocidad);
         animator.SetFloat(anim_horiz, x);
         animator.SetFloat(anim_vert, y);
     }

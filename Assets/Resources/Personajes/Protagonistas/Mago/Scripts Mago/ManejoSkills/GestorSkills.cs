@@ -26,7 +26,7 @@ public class GestorSkills : MonoBehaviour
     {
         this.animator = player.GetComponent<Animator>();
         controladorMago = player.GetComponent<AnimationStateControllerMago>();
-        velocidad = controladorMago.speed;
+        velocidad = controladorMago.speed; 
         velocidadGiro = controladorMago.rotationSpeed;
     }
 
@@ -42,8 +42,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "q";
-            controladorMago.speed = 0;
-            controladorMago.rotationSpeed = 0;
+            controladorMago.velocidad = 0;
+            controladorMago.velocidadGiro = 0;
             abilityTime = Time.time + 2.0f;
 
             this.animator.SetFloat("cooldown", 200f);
@@ -63,8 +63,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "e";
-            controladorMago.speed = 0;
-            controladorMago.rotationSpeed = 0;
+            controladorMago.velocidad = 0;
+            controladorMago.velocidadGiro = 0;
             abilityTime = Time.time + 3.5f;
 
             this.animator.SetFloat("cooldown", 200f);
@@ -81,8 +81,8 @@ public class GestorSkills : MonoBehaviour
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "r";
-            controladorMago.speed = 0;
-            controladorMago.rotationSpeed = 0;
+            controladorMago.velocidad = 0;
+            controladorMago.velocidadGiro = 0;
             abilityTime = Time.time + 2.0f;
 
             this.animator.SetFloat("cooldown", 200f);
@@ -93,14 +93,25 @@ public class GestorSkills : MonoBehaviour
             this.animator.SetBool("thirdMagicAttack", false);
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !ataque)
+        {
+            velocidad = controladorMago.runSpeed;
+            velocidadGiro = controladorMago.runningRotationSpeed;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift) && !ataque)
+        {
+            velocidad = controladorMago.speed;
+            velocidadGiro = controladorMago.rotationSpeed;
+        }
     }
 
     void FixedUpdate()
     {
         if(Time.time > abilityTime)
         {
-            controladorMago.speed = velocidad;
-            controladorMago.rotationSpeed = velocidadGiro;
+            controladorMago.velocidad = velocidad;
+            controladorMago.velocidadGiro = velocidadGiro;
         }
 
         if (animationExit && Time.time > animationStartTime)
