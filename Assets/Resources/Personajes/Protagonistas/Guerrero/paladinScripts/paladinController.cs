@@ -8,7 +8,6 @@ public class paladinController : MonoBehaviour
         anim_speed = "Speed",
         anim_horiz = "Horizontal",
         anim_vert = "Vertical",
-        anim_attack1 = "slash1",
         anim_attack2 = "slash2",
         anim_kick = "kick",
         anim_die = "die",
@@ -33,13 +32,13 @@ public class paladinController : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponent<Animator>();
         audioRun.volume = runVolume;
         audioWalk.volume = walkVolume;
         audioAttack1.volume = attackVolume;
         audioAttack2.volume = attackVolume;
         audioKick.volume = kickVolume;
-        audioDeath.volume = deathVolume;        
+        audioDeath.volume = deathVolume;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -64,34 +63,17 @@ public class paladinController : MonoBehaviour
             {
                 audioWalk.Stop();
             } // Parar el sonido de los pasos cuando camina.
-            if (!changeAttack)
+            
+            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack2 && !run)
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
-                {
-                    attack1 = true;
-                    anim.SetBool(anim_attack1, attack1);
-                    changeAttack = true;
-                }
-                if (Input.GetKeyUp(KeyCode.Mouse0))
-                {
-                    attack1 = false;
-                    anim.SetBool(anim_attack1, attack1);
-                } // Animación del golpe de espada nº1
+                attack2 = true;
+                anim.SetBool(anim_attack2, attack2);
             }
-            else
+            if (Input.GetKeyUp(KeyCode.Mouse0))
             {
-                if (Input.GetKeyDown(KeyCode.Mouse0) && !attack1 && attack2 && !run)
-                {
-                    attack2 = true;
-                    anim.SetBool(anim_attack2, attack2);
-                    changeAttack = false;
-                }
-                if (Input.GetKeyUp(KeyCode.Mouse0))
-                {
-                    attack2 = false;
-                    anim.SetBool(anim_attack2, attack2);
-                } // Animación del golpe de espada nº2.
-            } // Máquina de estado de ataque para alternar las dos animaciones de golpe de espada. l68 - l95
+                attack2 = false;
+                anim.SetBool(anim_attack2, attack2);
+            } // Animación del golpe de espada
             if (Input.GetKeyDown(KeyCode.Mouse2) && !kick && !run)
             {
                 kick = true;
