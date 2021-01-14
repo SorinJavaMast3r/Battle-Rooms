@@ -25,6 +25,10 @@ public class AnimationStateControllerMago : MonoBehaviour
 
     public Vector3 moveDirection = Vector3.zero;
 
+    public AudioSource audioRun, audioWalk;
+    [Range(0.00f, 1.00f)]
+    public float runVolume, walkVolume;
+
     public bool
         attack = false,
         jump = false,  //TODO: ?
@@ -36,6 +40,8 @@ public class AnimationStateControllerMago : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioRun.volume = runVolume;
+        audioWalk.volume = walkVolume;
         animator = GetComponent<Animator>();
     }
 
@@ -53,30 +59,30 @@ public class AnimationStateControllerMago : MonoBehaviour
                 return;
             }
 
-            // Si pasa de aquí el personaje está vivo
-            //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-            //{
-            //    audioWalk.Play();
-            //}
-            //if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-            //{
-            //    audioWalk.Stop();
-            //}
+            //Si pasa de aquí el personaje está vivo
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                audioWalk.Play();
+            }
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                audioWalk.Stop();
+            }
 
-            if ((Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R)) && !attack && !run)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && !attack && !run)
             {
                 attack = true;
             }
 
-            if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.R))
+            if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2) || Input.GetKeyUp(KeyCode.Alpha3))
             {
                 attack = false;
             }
 
             if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && y > 0)
             {
-                //audioWalk.Stop();
-                //audioRun.Play();
+                audioWalk.Stop();
+                audioRun.Play();
                 velocidad = runSpeed;
                 velocidadGiro = runningRotationSpeed;
                 run = true;
@@ -84,11 +90,11 @@ public class AnimationStateControllerMago : MonoBehaviour
             }
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                //audioRun.Stop();
-                //if (y != 0)
-                //{
-                //    audioWalk.Play();
-                //}
+                audioRun.Stop();
+                if (y != 0)
+                {
+                    audioWalk.Play();
+                }
                 velocidad = speed;
                 velocidad = rotationSpeed;
                 run = false;
