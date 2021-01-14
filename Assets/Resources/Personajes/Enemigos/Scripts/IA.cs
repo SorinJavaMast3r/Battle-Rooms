@@ -63,8 +63,8 @@ public class IA : MonoBehaviour
                                 );
         }
 
-        //if (player.transform.GetComponent<DragonCharacterController>() &&
-        //    player.transform.GetComponent<DragonCharacterController>().dead)
+        //if (player.GetComponent<CharacterController>() &&
+        //    player.GetComponent<CharacterController>().dead)
         //{
         //    animator.SetBool("attack", false);
         //    animator.SetFloat("speed", 0);
@@ -109,8 +109,8 @@ public class IA : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        //if (player.GetComponent<DragonCharacterController>() &&
-        //   player.GetComponent<DragonCharacterController>().dead)
+        //if (player.GetComponent<CharacterController>() &&
+        //   player.GetComponent<CharacterController>().dead)
         //{
         //    return;
         //}

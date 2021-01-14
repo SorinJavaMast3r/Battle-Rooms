@@ -593,11 +593,11 @@ MonoBehaviour:
   animationStates:
   - {fileID: 1649339694}
   sounds: []
-  spawnItemsOnStateEnter: 0
+  spawnItemsOnStateEnter: 1
   itemSpawnMode: 0
   itemSpawnPoint: {x: 0, y: 0, z: 0}
   itemSpawnTfm: {fileID: 0}
-  exactPosition: 0
+  exactPosition: 1
   totalAmount: 1
   spawnableItems: []
   variables: []
@@ -851,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1263122200
 BoxCollider:
   m_ObjectHideFlags: 0
