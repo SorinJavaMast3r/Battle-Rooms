@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 566841374}
   - component: {fileID: 566841370}
   - component: {fileID: 566841372}
+  - component: {fileID: 566841375}
   m_Layer: 0
   m_Name: States
   m_TagString: Untagged
@@ -578,7 +579,8 @@ MonoBehaviour:
   saveId: -1
   isEnabled: 1
   name: Wander
-  triggers: []
+  triggers:
+  - {fileID: 566841375}
   ownsObjectFinder: 0
   objectFinder:
     useCustomTags: 0
@@ -730,6 +732,30 @@ MonoBehaviour:
   hitStateDuration: 1.5
   returnToPreviousState: 1
   changeToState: {fileID: 566841367}
+--- !u!114 &566841375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566841364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e29f56ac49b709147995fa56e95e39e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveId: -1
+  transitionState: {fileID: 566841367}
+  parentTrigger: {fileID: 0}
+  subTriggers: []
+  ownsObjectFinder: 0
+  objectFinder:
+    useCustomTags: 0
+    tags:
+    - Player
+    cachePoint: 0
+  invertResult: 0
+  sightTransformOverride: {fileID: 1263122203}
 --- !u!1 &673656100
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1263122200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -896,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263122199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125.36, y: 1.3361988, z: 57.585243}
+  m_LocalPosition: {x: 127.87, y: 1.3361988, z: 57.585243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
