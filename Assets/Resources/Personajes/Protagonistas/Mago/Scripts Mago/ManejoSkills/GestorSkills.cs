@@ -33,7 +33,7 @@ public class GestorSkills : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
         {
             ataque = true;
 
@@ -51,13 +51,13 @@ public class GestorSkills : MonoBehaviour
         
         this.animator.SetFloat("cooldown", this.animator.GetFloat("cooldown") - 1f);
         
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.Alpha1))
         {
             ataque = false;
             this.animator.SetBool("firstMagicAttack", ataque);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
         {
             this.animator.SetBool("secondMagicAttack", true);
             animationStartTime = Time.time + animationTime;
@@ -70,12 +70,12 @@ public class GestorSkills : MonoBehaviour
             this.animator.SetFloat("cooldown", 200f);
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Alpha2))
         {
             this.animator.SetBool("secondMagicAttack", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && this.animator.GetFloat("cooldown") <= 0 && !ataque)
         {
             this.animator.SetBool("thirdMagicAttack", true);
             animationStartTime = Time.time + animationTime;
@@ -88,7 +88,7 @@ public class GestorSkills : MonoBehaviour
             this.animator.SetFloat("cooldown", 200f);
         }
 
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.Alpha3))
         {
             this.animator.SetBool("thirdMagicAttack", false);
         }
