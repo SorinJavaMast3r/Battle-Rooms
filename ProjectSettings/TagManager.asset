@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - Wall
   - Tag
   - Arco
@@ -19,11 +18,7 @@ TagManager:
   - Cofre
   - Llave
   - Corazon
-=======
-  - Terrain
-  - Projectile
   - Dead
->>>>>>> Enemigos
   layers:
   - Default
   - TransparentFX
@@ -34,13 +29,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-<<<<<<< HEAD
   - BloomMobileEffect
   - Enemy
-=======
-  - Terrain
-  - 
->>>>>>> Enemigos
   - 
   - 
   - 
