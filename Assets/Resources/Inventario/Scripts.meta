@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Resources/Inventario/Scripts.meta
 guid: 4b1de03f81a34084384be4cff197936f
+=======
+guid: 4f156b6df4a9442ad8faa662991a15cf
+>>>>>>> Enemigos:Assets/AIBehavior/Scripts.meta
+=======
+guid: 4b1de03f81a34084384be4cff197936f
+>>>>>>> Enemigos
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

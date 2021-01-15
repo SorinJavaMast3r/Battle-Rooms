@@ -18,6 +18,7 @@ TagManager:
   - Cofre
   - Llave
   - Corazon
+  - Dead
   layers:
   - Default
   - TransparentFX
