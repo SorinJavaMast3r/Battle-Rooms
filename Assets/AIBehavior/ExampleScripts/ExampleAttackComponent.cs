@@ -46,5 +46,5 @@ namespace AIBehaviorExamples
 
 			return Random.Range (minDamage, maxDamage);
 		}
-	}
+    }
 }
