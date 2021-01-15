@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 7080738d246006747964bbce844203b4
 folderAsset: yes
+<<<<<<< HEAD
 timeCreated: 1459540385
 licenseType: Store
 DefaultImporter:
+=======
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> Enemigos
   userData: 
   assetBundleName: 
   assetBundleVariant: 
