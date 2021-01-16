@@ -14814,6 +14814,7 @@ MonoBehaviour:
   RandomMoveRadius: 0
   RandomMoveSpeedScale: 0
   Target: {fileID: 0}
+  damage: 40
   CollidesWith:
     serializedVersion: 2
     m_Bits: 4294967295

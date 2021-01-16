@@ -17,6 +17,4 @@ public class HabilidadDeCasteo : MonoBehaviour
         efectoDentroDelJuego = Instantiate(efecto, transform.position, transform.rotation) as Rigidbody;
 
     }
-
-
 }

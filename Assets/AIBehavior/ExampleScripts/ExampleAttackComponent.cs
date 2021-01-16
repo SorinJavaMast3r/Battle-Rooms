@@ -14,7 +14,7 @@ namespace AIBehaviorExamples
 		public void MeleeAttack(AttackData attackData)
 		{
 			Debug.Log ("Melee attack");
-			attackData.target.SendMessage("Damage", CalculateDamage(attackData));
+			attackData.target.SendMessage("decreaseHP", CalculateDamage(attackData));
 		}
 
 

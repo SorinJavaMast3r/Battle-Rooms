@@ -19,6 +19,8 @@ TagManager:
   - Llave
   - Corazon
   - Dead
+  - Enemy
+  - EarthAttack
   layers:
   - Default
   - TransparentFX

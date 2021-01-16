@@ -6,10 +6,10 @@ public class PlayerStats : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int maxHP;
-    public int currentHP;
-    public int maxMP;
-    public int currentMP;
+    public float maxHP;
+    public float currentHP;
+    public float maxMP;
+    public float currentMP;
     public int defensaMagica;
     public int defensaFisica;
     public int ataqueMagico;
@@ -29,10 +29,13 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (currentMP != maxMP)
+        {
+            increaseMP(0.005f);
+        }
     }
 
-    public void increaseHP(int increase)
+    public void increaseHP(float increase)
     {
         if ((this.currentHP + increase) < this.maxHP)
             this.currentHP += increase;
@@ -42,7 +45,7 @@ public class PlayerStats : MonoBehaviour
         this.guiManager.updateHpBar(this.currentHP, this.maxHP);
     }
 
-    public void decreaseHP(int decrease)
+    public void decreaseHP(float decrease)
     {
         if ((this.currentHP - decrease) > 0)
             this.currentHP -= decrease;
@@ -52,7 +55,7 @@ public class PlayerStats : MonoBehaviour
         this.guiManager.updateHpBar(this.currentHP, this.maxHP);
     }
 
-    public void increaseMP(int increase)
+    public void increaseMP(float increase)
     {
         if ((this.currentMP + increase) < this.maxMP)
             this.currentMP += increase;
@@ -62,7 +65,7 @@ public class PlayerStats : MonoBehaviour
         this.guiManager.updateMpBar(this.currentMP, this.maxMP);
     }
 
-    public void decreaseMP(int decrease)
+    public void decreaseMP(float decrease)
     {
         if ((this.currentMP - decrease) > 0)
             this.currentMP -= decrease;
