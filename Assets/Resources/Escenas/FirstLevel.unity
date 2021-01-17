@@ -41824,6 +41824,10 @@ PrefabInstance:
       propertyPath: walkVolume
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 2290261494054879722, guid: 04823c706f54e514c8810ca8103c33a6, type: 3}
+      propertyPath: rotationSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2290261494054879724, guid: 04823c706f54e514c8810ca8103c33a6, type: 3}
       propertyPath: m_AngularDrag
       value: 0.05

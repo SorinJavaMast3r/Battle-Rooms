@@ -37,12 +37,16 @@ public class AnimationStateControllerMago : MonoBehaviour
         val = false,
         dead = false;
 
+    private float abilityTime;
+
     // Start is called before the first frame update
     void Start()
     {
         audioRun.volume = runVolume;
         audioWalk.volume = walkVolume;
         animator = GetComponent<Animator>();
+        this.velocidad = this.speed;
+        this.velocidadGiro = this.rotationSpeed;
     }
 
     void Update()
@@ -69,9 +73,27 @@ public class AnimationStateControllerMago : MonoBehaviour
                 audioWalk.Stop();
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && !attack && !run)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && !attack)
             {
                 attack = true;
+
+                if (run)
+                {
+                    run = false;
+                    animator.SetBool(anim_run, run);
+                    audioRun.Stop();
+                }
+                
+                this.velocidad = 0;
+                this.velocidadGiro = 0;
+
+                if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    abilityTime = Time.time + 2.0f;
+                } else if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    abilityTime = Time.time + 3.5f;
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2) || Input.GetKeyUp(KeyCode.Alpha3))
@@ -79,7 +101,20 @@ public class AnimationStateControllerMago : MonoBehaviour
                 attack = false;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && y > 0)
+            if (Time.time > abilityTime)
+            {
+                if (run)
+                {
+                    this.velocidad = runSpeed;
+                    this.velocidadGiro = runningRotationSpeed;
+                } else
+                {
+                    this.velocidad = speed;
+                    this.velocidadGiro = rotationSpeed;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !attack && y > 0 && Time.time > abilityTime)
             {
                 audioWalk.Stop();
                 audioRun.Play();
@@ -88,7 +123,7 @@ public class AnimationStateControllerMago : MonoBehaviour
                 run = true;
                 animator.SetBool(anim_run, run);
             }
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            if (Input.GetKeyUp(KeyCode.LeftShift) && !attack && Time.time > abilityTime)
             {
                 audioRun.Stop();
                 if (y != 0)
@@ -96,10 +131,16 @@ public class AnimationStateControllerMago : MonoBehaviour
                     audioWalk.Play();
                 }
                 velocidad = speed;
-                velocidad = rotationSpeed;
+                velocidadGiro = rotationSpeed;
                 run = false;
                 animator.SetBool(anim_run, run);
             } // Correr
+
+            if(y == 0)
+            {
+                audioRun.Stop();
+                audioWalk.Stop();
+            }
         }
     }
 
