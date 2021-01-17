@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
+using AIBehavior;
 
 public class RFX1_TransformMotion : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class RFX1_TransformMotion : MonoBehaviour
     public float RandomMoveRadius = 0;
     public float RandomMoveSpeedScale = 0;
     public GameObject Target;
+    public float damage;
  
     public LayerMask CollidesWith = ~0;
    
@@ -197,6 +199,11 @@ public class RFX1_TransformMotion : MonoBehaviour
             instance.transform.LookAt(hit.point + hit.normal + hit.normal * CollisionOffset);
             if (!CollisionEffectInWorldSpace) instance.transform.parent = transform;
             Destroy(instance, DestroyTimeDelay);
+        }
+
+        if (hit.collider.tag.Equals("Enemy"))
+        {
+            hit.collider.gameObject.GetComponent<AIBehaviors>().Damage(damage);
         }
     }
 
