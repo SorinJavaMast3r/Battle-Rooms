@@ -31,6 +31,9 @@ public class GestorSkills : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerStats.dead)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Alpha1) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 7)
         {
             this.animator.Play("First Magic Attack");

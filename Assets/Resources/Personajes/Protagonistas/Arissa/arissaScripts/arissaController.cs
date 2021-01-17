@@ -32,28 +32,24 @@ public class arissaController : MonoBehaviour
 
     public Vector3 moveDirection = Vector3.zero;
 
+    private PlayerStats player;
+
     void Start()
     {
         audioRun.volume = runVolume;
         audioWalk.volume = walkVolume;
         anim = GetComponent<Animator>();
+        player = this.GetComponent<PlayerStats>();
         //Cuando animemos la muerte mirar linea 47
     }
 
     void Update()
     {
+        if (player.dead)
+            return;
+
         if (!AbrirMenu.instanciar.MenuPausaActivo)
         {
-            if (dead) // Si está muerto, hace animación de muerte y no hace nada más
-            {
-                if (die)
-                {
-                    anim.SetBool(anim_die, die);
-                    die = !die;
-                }
-                return;
-            }
-
             // Si pasa de aquí el personaje está vivo
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -111,6 +107,9 @@ public class arissaController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+        if (player.dead)
+            return;
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
         // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)

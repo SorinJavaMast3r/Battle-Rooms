@@ -38,10 +38,12 @@ public class AnimationStateControllerMago : MonoBehaviour
         dead = false;
 
     private float abilityTime;
+    private PlayerStats player;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = this.GetComponent<PlayerStats>();
         audioRun.volume = runVolume;
         audioWalk.volume = walkVolume;
         animator = GetComponent<Animator>();
@@ -51,6 +53,9 @@ public class AnimationStateControllerMago : MonoBehaviour
 
     void Update()
     {
+        if (player.dead)
+            return;
+
         if (!AbrirMenu.instanciar.MenuPausaActivo)
         {
             if (dead) // Si está muerto, hace animación de muerte y no hace nada más
@@ -146,6 +151,9 @@ public class AnimationStateControllerMago : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (player.dead)
+            return;
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
         // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)
