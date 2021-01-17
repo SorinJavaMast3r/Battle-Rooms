@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15376459, g: 0.19051756, b: 0.25215644, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5099,6 +5099,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -6718,6 +6722,10 @@ PrefabInstance:
     - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
@@ -15856,6 +15864,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -21189,6 +21201,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -22684,6 +22700,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -23819,6 +23839,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -24020,6 +24044,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3729338830618306811, guid: bceaf819f67f4744faae60af67661e74, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 3768383231473671362, guid: bceaf819f67f4744faae60af67661e74, type: 3}
       propertyPath: m_LocalPosition.x
       value: -136.967
@@ -32817,6 +32845,87 @@ Transform:
   m_Father: {fileID: 1382514}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1455396902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455396905}
+  - component: {fileID: 1455396904}
+  - component: {fileID: 1455396903}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1455396903
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455396902}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0a9d6fdd1cc294f4884b31ffca399781, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1455396904
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455396902}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1455396905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455396902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -93.6, y: -1.61, z: 8.07}
+  m_LocalScale: {x: 1.5177823, y: 1, z: 1.6501}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1472710657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36334,9 +36443,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: showDebugMessages
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38169,6 +38286,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
       value: 512
@@ -39314,6 +39435,10 @@ PrefabInstance:
     - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
@@ -40884,6 +41009,10 @@ PrefabInstance:
     - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245081339478863154, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
