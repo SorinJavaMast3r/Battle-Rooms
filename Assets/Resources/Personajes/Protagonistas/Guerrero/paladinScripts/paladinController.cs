@@ -48,6 +48,8 @@ public class paladinController : MonoBehaviour
 
     void Update()
     {
+        anim.SetFloat("cooldown", anim.GetFloat("cooldown") - 1f);
+
         if (player.dead)
             return;
 
@@ -62,20 +64,23 @@ public class paladinController : MonoBehaviour
                 audioWalk.Stop();
             } // Parar el sonido de los pasos cuando camina.
             
-            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack2 && !run)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && !attack2 && !run && player.currentMP >= 2)
             {
                 attack2 = true;
                 anim.SetBool(anim_attack2, attack2);
+                player.decreaseMP(2);
             }
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 attack2 = false;
                 anim.SetBool(anim_attack2, attack2);
             } // Animación del golpe de espada
-            if (Input.GetKeyDown(KeyCode.Mouse2) && !kick && !run)
+            if (Input.GetKeyDown(KeyCode.Mouse2) && !kick && !run && player.currentMP >= 10 && anim.GetFloat("cooldown") <= 0)
             {
                 kick = true;
                 anim.SetBool(anim_kick, kick);
+                anim.SetFloat("cooldown", 200f);
+                player.decreaseMP(10);
             }
             if (Input.GetKeyUp(KeyCode.Mouse2))
             {

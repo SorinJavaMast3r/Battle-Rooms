@@ -6,23 +6,19 @@ using UnityEngine;
 public class GestorSkillsArissa : MonoBehaviour
 {
     private bool animationExit = false;
-    private float animationTime = 0.84f;
+    private float animationTime = 0.70f;
     private float animationStartTime;
     private Animator animator;
     private string keyPressed;
-    private float abilityTime;
     private PlayerStats playerStats;
 
     public Skill flecha;
     public GameObject player;
 
-    private arissaController controladorArrisa;
-
     // Start is called before the first frame update
     void Start()
     {
         this.animator = player.GetComponent<Animator>();
-        controladorArrisa = player.GetComponent<arissaController>();
         playerStats = player.GetComponent<PlayerStats>();
     }
 
@@ -34,18 +30,14 @@ public class GestorSkillsArissa : MonoBehaviour
 
         if (!AbrirMenu.instanciar.MenuPausaActivo && !Inventario.llamar.inventarioActivo)
         {         
-            if (Input.GetKeyDown(KeyCode.Mouse0) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 7)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && playerStats.currentMP >= 2)
             {
                 animationStartTime = Time.time + animationTime;
                 animationExit = true;
                 keyPressed = "q";
 
-                this.animator.SetFloat("cooldown", 200f);
-
-                playerStats.decreaseMP(7);
+                playerStats.decreaseMP(2);
             }
-
-            this.animator.SetFloat("cooldown", this.animator.GetFloat("cooldown") - 1f);
 
             //if (Input.GetKeyDown(KeyCode.Alpha2) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 20)
             //{

@@ -45,6 +45,8 @@ public class arissaController : MonoBehaviour
 
     void Update()
     {
+        anim.SetFloat("cooldown", anim.GetFloat("cooldown") - 1f);
+
         if (player.dead)                  
             return;
 
@@ -64,16 +66,18 @@ public class arissaController : MonoBehaviour
                 attack = true;
                 anim.SetBool(anim_attack, attack);
             }
-            if (Input.GetKeyUp(KeyCode.Mouse0))
+            if (Input.GetKeyUp(KeyCode.Mouse0) && player.currentMP >= 2)
             {
                 attack = false;
                 anim.SetBool(anim_attack, attack);
             } // Disparo con arco
 
-            if (Input.GetKeyDown(KeyCode.Mouse2) && !melee && !run)
+            if (Input.GetKeyDown(KeyCode.Mouse2) && !melee && !run && player.currentMP >= 10 && anim.GetFloat("cooldown") <= 0)
             {
                 melee = true;
                 anim.SetBool(anim_melee, melee);
+                anim.SetFloat("cooldown", 200f);
+                player.decreaseMP(10);
             }
             if (Input.GetKeyUp(KeyCode.Mouse2))
             {
