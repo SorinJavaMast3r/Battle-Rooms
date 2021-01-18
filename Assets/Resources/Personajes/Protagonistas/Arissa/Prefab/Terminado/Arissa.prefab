@@ -7084,6 +7084,7 @@ MonoBehaviour:
   PanelInventario: {fileID: 0}
   listaInformacionSlot: []
   capacidad: 18
+  inventarioActivo: 0
   miSlot: {fileID: 0}
 --- !u!114 &1113412834005990606
 MonoBehaviour:
@@ -7138,6 +7139,8 @@ MonoBehaviour:
   defensaCriticos: 0
   evasion: 0
   tenacidad: 0
+  timeGameOver: 0
+  gameOver: {fileID: 0}
   dead: 0
 --- !u!114 &8144068062625184253
 MonoBehaviour:
