@@ -32,6 +32,8 @@ public class paladinController : MonoBehaviour
 
     private PlayerStats player;
 
+    public GameObject sword;
+
     void Start()
     {
         audioRun.volume = runVolume;

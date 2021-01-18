@@ -37769,6 +37769,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8753515607916847173, guid: 78f05eae8a339d64ea48cfe2f3a727aa, type: 3}
   m_PrefabInstance: {fileID: 1815666832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1818962286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4303753136997334891, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+  m_PrefabInstance: {fileID: 4303753137442576005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1834412395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8753515607916847173, guid: 78f05eae8a339d64ea48cfe2f3a727aa, type: 3}
@@ -42973,6 +42978,10 @@ PrefabInstance:
       propertyPath: llave
       value: 
       objectReference: {fileID: 1424976292}
+    - target: {fileID: 4303753138421939909, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 1818962286}
     - target: {fileID: 4303753138421939916, guid: a0b3d760e18fdbf4c8866e221a42de22, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.257553

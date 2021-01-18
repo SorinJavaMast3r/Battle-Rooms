@@ -102,6 +102,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4303753136997334890}
   - component: {fileID: 4303753136997334901}
+  - component: {fileID: 3956169271773484958}
+  - component: {fileID: 8241791715024710643}
   m_Layer: 0
   m_Name: Paladin_J_Nordstrom_Sword
   m_TagString: Untagged
@@ -116,13 +118,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4303753136997334891}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.030693335, y: 0.12594205, z: -0.0038985051, w: 0.99155504}
+  m_LocalPosition: {x: -0.05981064, y: 0.018102765, z: 0.12435055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4303753138421939916}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.546, y: 14.477, z: 0}
 --- !u!137 &4303753136997334901
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -176,6 +178,31 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.06104052, y: -0.006658852, z: 0.3036496}
     m_Extent: {x: 0.15018207, y: 0.045836862, z: 0.50709116}
   m_DirtyAABB: 0
+--- !u!65 &3956169271773484958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303753136997334891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08, y: 0.04, z: 0.67}
+  m_Center: {x: 0.815, y: 1.4, z: 0.4}
+--- !u!114 &8241791715024710643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303753136997334891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a886d452dc97d644a8e4515069f71151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4303753137042269228
 GameObject:
   m_ObjectHideFlags: 0
@@ -7272,6 +7299,7 @@ MonoBehaviour:
   PanelInventario: {fileID: 0}
   listaInformacionSlot: []
   capacidad: 18
+  inventarioActivo: 0
   miSlot: {fileID: 0}
 --- !u!114 &4303753138421939899
 MonoBehaviour:
@@ -7342,6 +7370,9 @@ MonoBehaviour:
   defensaCriticos: 0
   evasion: 0
   tenacidad: 0
+  timeGameOver: 0
+  gameOver: {fileID: 0}
+  dead: 0
 --- !u!1 &4303753138432026361
 GameObject:
   m_ObjectHideFlags: 0
