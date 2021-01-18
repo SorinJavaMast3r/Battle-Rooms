@@ -45,10 +45,10 @@ public class arissaController : MonoBehaviour
 
     void Update()
     {
-        if (player.dead)
+        if (player.dead)                  
             return;
 
-        if (!AbrirMenu.instanciar.MenuPausaActivo)
+        if (!AbrirMenu.instanciar.MenuPausaActivo && !Inventario.llamar.inventarioActivo)// Poner en los demas controllers y en los gestores de skills
         {
             // Si pasa de aquí el personaje está vivo
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))

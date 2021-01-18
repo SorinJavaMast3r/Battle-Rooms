@@ -21,6 +21,7 @@ TagManager:
   - Dead
   - Enemy
   - EarthAttack
+  - GameOver
   layers:
   - Default
   - TransparentFX

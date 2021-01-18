@@ -49,7 +49,7 @@ public class paladinController : MonoBehaviour
         if (player.dead)
             return;
 
-        if (!AbrirMenu.instanciar.MenuPausaActivo)
+        if (!AbrirMenu.instanciar.MenuPausaActivo && !Inventario.llamar.inventarioActivo)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {

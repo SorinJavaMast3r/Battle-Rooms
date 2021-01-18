@@ -25,7 +25,7 @@ public class Inventario : MonoBehaviour
 
     private string jsonString; //Texto en formato json que usaremos para guardar el inventario
 
-    private bool inventarioActivo;
+    public bool inventarioActivo;
     public Slot miSlot;
 
     public static Inventario llamar;

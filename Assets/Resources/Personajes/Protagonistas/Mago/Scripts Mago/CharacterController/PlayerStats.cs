@@ -18,7 +18,9 @@ public class PlayerStats : MonoBehaviour
     public int defensaCriticos;
     public int evasion;
     public int tenacidad;
+    public float timeGameOver;
 
+    public GameObject gameOver;
     GUIManager guiManager;
 
     public bool dead = false;
@@ -32,10 +34,17 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
         if (dead)
+        {            
+            if (Time.time > timeGameOver)
+            {
+                gameOver.SetActive(true);
+            }
             return;
+        }            
 
         if (currentHP == 0)
         {
+            timeGameOver = Time.time + 5f;
             dead = true;
             Debug.Log("Muerto");
             this.GetComponent<Animator>().Play("Die");

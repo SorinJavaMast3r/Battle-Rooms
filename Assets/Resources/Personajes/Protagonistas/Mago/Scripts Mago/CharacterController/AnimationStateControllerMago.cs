@@ -56,18 +56,8 @@ public class AnimationStateControllerMago : MonoBehaviour
         if (player.dead)
             return;
 
-        if (!AbrirMenu.instanciar.MenuPausaActivo)
+        if (!AbrirMenu.instanciar.MenuPausaActivo && !Inventario.llamar.inventarioActivo)
         {
-            if (dead) // Si está muerto, hace animación de muerte y no hace nada más
-            {
-                if (die)
-                {
-                    animator.SetBool(anim_die, die);
-                    die = !die;
-                }
-                return;
-            }
-
             //Si pasa de aquí el personaje está vivo
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
