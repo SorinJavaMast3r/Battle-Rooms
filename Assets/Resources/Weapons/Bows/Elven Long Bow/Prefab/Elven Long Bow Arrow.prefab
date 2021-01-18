@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 134096183039723876}
   - component: {fileID: 1819418629988106609}
   - component: {fileID: 3039333201684324443}
+  - component: {fileID: 5956615270766248039}
   m_Layer: 0
   m_Name: Elven Long Bow Arrow
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 134096183040021828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.7590706, y: 9.77043, z: -3.2147832}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.03}
   m_Children:
   - {fileID: 134096183039723878}
   m_Father: {fileID: 0}
@@ -57,12 +58,24 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134096183040021828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 19
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: -1}
+  m_Direction: 2
+  m_Center: {x: 0, y: -1, z: -1}
+--- !u!114 &5956615270766248039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134096183040021828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7060efe174a100b4da41c3c63fcae34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &134096183040021830
 GameObject:
   m_ObjectHideFlags: 0

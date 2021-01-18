@@ -1700,10 +1700,7 @@ MonoBehaviour:
   itemSpawnTfm: {fileID: 0}
   exactPosition: 0
   totalAmount: 1
-  spawnableItems:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  spawnableItems: []
   variables: []
   destroyGameObject: 1
   destroyAfterTime: 5
@@ -2934,6 +2931,7 @@ GameObject:
   - component: {fileID: 6245081339478863161}
   - component: {fileID: 6245081339478863152}
   - component: {fileID: 6245081339478863153}
+  - component: {fileID: 3160197954531067356}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Enemy
@@ -3135,6 +3133,22 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.95, z: 0}
+--- !u!114 &3160197954531067356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245081339478863154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7548379264ae067489e661dd310ea7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizacion: {fileID: 0}
+  probSoltar: 70
+  cantidadMaxima: 3
+  bonus: 1
 --- !u!1 &6245081339524361571
 GameObject:
   m_ObjectHideFlags: 0

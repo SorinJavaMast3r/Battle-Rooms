@@ -1,11 +1,12 @@
 using UnityEngine;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 #if UNITY_EDITOR
 using UnityEditor;
 using AIBehaviorEditor;
 #endif
-
 
 namespace AIBehavior
 {
@@ -21,11 +22,14 @@ namespace AIBehavior
 		public bool changeTag;
 		public string deadTag;
 
-		private float destroyTime = 0.0f;
+		private Looteable loot;
 
+		private float destroyTime = 0.0f;
 
 		protected override void Init(AIBehaviors fsm)
 		{
+			loot = transform.parent.GetComponent<Looteable>();
+
 			fsm.PlayAudio();
 			fsm.MoveAgent(fsm.aiTransform, 0.0f, 0.0f);
 
@@ -65,6 +69,7 @@ namespace AIBehavior
 		{
 			if ( destroyGameObject && Time.time > destroyTime )
 			{
+				loot.Lootear();
 				Destroy (fsm.gameObject);
 			}
 		}

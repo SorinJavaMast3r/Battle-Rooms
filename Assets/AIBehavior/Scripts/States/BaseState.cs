@@ -131,8 +131,8 @@ namespace AIBehavior
 
 			if (spawnItemsOnStateEnter) 
 			{
-				SpawnItems (fsm);
-			}
+                SpawnItems(fsm);
+            }
 
 			ChangeVars (fsm);
 		}
