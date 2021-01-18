@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.15376459, g: 0.19051756, b: 0.25215644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7927,31 +7927,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 70075234740876488, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 70075234740876488, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 70075235079546336, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 70075235079546336, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1113412832818259154, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1113412832997713028, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1113412833663777067, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834005990601, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: PanelInventario
@@ -7967,7 +7967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834005990604, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834005990606, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: llave
@@ -8023,16 +8023,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834045788546, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834571683596, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1113412834694772704, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 4448689146630969806, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
+      propertyPath: energyBall
+      value: 
+      objectReference: {fileID: 11400000, guid: 02c0529ef8cd8fe46bad5cf471d5b447, type: 2}
     - target: {fileID: 7966481051638449319, guid: 48c2d502161dc494bb2522671e9ba5e9, type: 3}
       propertyPath: currentHP
       value: 90
@@ -42049,6 +42053,10 @@ PrefabInstance:
     - target: {fileID: 2290261494054879722, guid: 04823c706f54e514c8810ca8103c33a6, type: 3}
       propertyPath: walkVolume
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2290261494054879722, guid: 04823c706f54e514c8810ca8103c33a6, type: 3}
+      propertyPath: rotationSpeed
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2290261494054879724, guid: 04823c706f54e514c8810ca8103c33a6, type: 3}
       propertyPath: m_AngularDrag

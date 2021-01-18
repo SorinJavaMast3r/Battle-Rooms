@@ -18,8 +18,6 @@ public class GestorSkills : MonoBehaviour
     public Skill earthSmash;
     public GameObject player;
 
-    private bool ataque;
-    private float velocidad, velocidadGiro;
     private AnimationStateControllerMago controladorMago;
 
     // Start is called before the first frame update
@@ -28,25 +26,21 @@ public class GestorSkills : MonoBehaviour
         this.animator = player.GetComponent<Animator>();
         controladorMago = player.GetComponent<AnimationStateControllerMago>();
         playerStats = player.GetComponent<PlayerStats>();
-        velocidad = controladorMago.speed; 
-        velocidadGiro = controladorMago.rotationSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && this.animator.GetFloat("cooldown") <= 0 && !ataque && playerStats.currentMP >= 7)
-        {
-            ataque = true;
+        if (playerStats.dead)
+            return;
 
-            this.animator.SetBool("firstMagicAttack", ataque);
+        if (Input.GetKeyDown(KeyCode.Alpha1) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 7)
+        {
+            this.animator.Play("First Magic Attack");
             
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "q";
-            controladorMago.velocidad = 0;
-            controladorMago.velocidadGiro = 0;
-            abilityTime = Time.time + 2.0f;
 
             this.animator.SetFloat("cooldown", 200f);
 
@@ -55,71 +49,28 @@ public class GestorSkills : MonoBehaviour
         
         this.animator.SetFloat("cooldown", this.animator.GetFloat("cooldown") - 1f);
         
-        if (Input.GetKeyUp(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 20)
         {
-            ataque = false;
-            this.animator.SetBool("firstMagicAttack", ataque);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2) && this.animator.GetFloat("cooldown") <= 0 && !ataque && playerStats.currentMP >= 20)
-        {
-            this.animator.SetBool("secondMagicAttack", true);
+            this.animator.Play("Second Magic Attack");
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "e";
-            controladorMago.velocidad = 0;
-            controladorMago.velocidadGiro = 0;
-            abilityTime = Time.time + 3.5f;
 
             this.animator.SetFloat("cooldown", 200f);
 
             playerStats.decreaseMP(20);
         }
 
-        if (Input.GetKeyUp(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && this.animator.GetFloat("cooldown") <= 0 && playerStats.currentMP >= 15)
         {
-            this.animator.SetBool("secondMagicAttack", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3) && this.animator.GetFloat("cooldown") <= 0 && !ataque && playerStats.currentMP >= 15)
-        {
-            this.animator.SetBool("thirdMagicAttack", true);
+            this.animator.Play("Third Magic Attack");
             animationStartTime = Time.time + animationTime;
             animationExit = true;
             keyPressed = "r";
-            controladorMago.velocidad = 0;
-            controladorMago.velocidadGiro = 0;
-            abilityTime = Time.time + 2.0f;
 
             this.animator.SetFloat("cooldown", 200f);
 
             playerStats.decreaseMP(15);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Alpha3))
-        {
-            this.animator.SetBool("thirdMagicAttack", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !ataque)
-        {
-            velocidad = controladorMago.runSpeed;
-            velocidadGiro = controladorMago.runningRotationSpeed;
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift) && !ataque)
-        {
-            velocidad = controladorMago.speed;
-            velocidadGiro = controladorMago.rotationSpeed;
-        }
-    }
-
-    void FixedUpdate()
-    {
-        if(Time.time > abilityTime)
-        {
-            controladorMago.velocidad = velocidad;
-            controladorMago.velocidadGiro = velocidadGiro;
         }
 
         if (animationExit && Time.time > animationStartTime)
@@ -140,8 +91,6 @@ public class GestorSkills : MonoBehaviour
                     break;
             }
         }
-
-
     }
 
 }

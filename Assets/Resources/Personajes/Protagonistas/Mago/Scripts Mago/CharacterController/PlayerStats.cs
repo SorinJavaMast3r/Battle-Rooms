@@ -21,6 +21,8 @@ public class PlayerStats : MonoBehaviour
 
     GUIManager guiManager;
 
+    public bool dead = false;
+
     void Start()
     {
         this.guiManager = GetComponent<GUIManager>();
@@ -29,6 +31,17 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dead)
+            return;
+
+        if (currentHP == 0)
+        {
+            dead = true;
+            Debug.Log("Muerto");
+            this.GetComponent<Animator>().Play("Die");
+            this.tag = "Dead";
+        }
+
         if (currentMP != maxMP)
         {
             increaseMP(0.005f);

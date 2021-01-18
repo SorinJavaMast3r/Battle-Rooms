@@ -30,6 +30,8 @@ public class paladinController : MonoBehaviour
         dead = false,
         changeAttack = false;
 
+    private PlayerStats player;
+
     void Start()
     {
         audioRun.volume = runVolume;
@@ -39,22 +41,16 @@ public class paladinController : MonoBehaviour
         audioKick.volume = kickVolume;
         audioDeath.volume = deathVolume;
         anim = GetComponent<Animator>();
+        player = this.GetComponent<PlayerStats>();
     }
 
     void Update()
     {
+        if (player.dead)
+            return;
+
         if (!AbrirMenu.instanciar.MenuPausaActivo)
         {
-            if (dead)
-            {
-                if (die)
-                {
-                    anim.SetBool(anim_die, die);
-                    die = !die;
-                }
-                return;
-            }
-
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 audioWalk.Play();
@@ -110,6 +106,9 @@ public class paladinController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (player.dead)
+            return;
+
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
         // Con Input.GetAxis("x"); obtenemos un movimiento suavizado, con GetAxisRaw son movimientos más agravantes. (l78 - l79)
