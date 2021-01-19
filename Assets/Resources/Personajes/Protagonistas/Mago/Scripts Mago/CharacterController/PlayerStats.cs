@@ -55,6 +55,11 @@ public class PlayerStats : MonoBehaviour
         {
             increaseMP(0.005f);
         }
+
+        if (this.name.Equals("Paladin"))
+        {
+            increaseHP(0.008f);
+        }
     }
 
     public void increaseHP(float increase)

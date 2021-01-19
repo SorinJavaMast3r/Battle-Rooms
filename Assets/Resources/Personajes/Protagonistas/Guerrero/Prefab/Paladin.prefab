@@ -6741,7 +6741,7 @@ CapsuleCollider:
   m_Radius: 0.23119104
   m_Height: 1.7558014
   m_Direction: 1
-  m_Center: {x: -0.0013071299, y: 0.8604888, z: 0}
+  m_Center: {x: -0.0013071299, y: 0.95, z: 0}
 --- !u!82 &4303753138421939904
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7288,7 +7288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a052b79d6a91e429aa079a11b7ea24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  llave: {fileID: 0}
+  llave: {fileID: 4374622874389253834, guid: c9bcb486b8ea4ff4f8eb8f866a8b031f, type: 3}
   particulaCorazon: {fileID: 4303753138146216765}
   inside: 0
 --- !u!114 &4303753138421939919

@@ -5,11 +5,10 @@ using UnityEngine;
 public class InteraccionItems : MonoBehaviour
 {
     #region Propiedades
-    public GameObject llave;
+    private GameObject llave;
 
 	public ParticleSystem particulaCorazon;
 	public bool inside;
-	private Renderer visible;
 
 	public static InteraccionItems llamar;
     #endregion
@@ -22,7 +21,6 @@ public class InteraccionItems : MonoBehaviour
 	void Start()
 	{
 		particulaCorazon.Stop();
-		visible = llave.gameObject.GetComponent<Renderer>();
 	}
 
 	void Update()
@@ -38,6 +36,7 @@ public class InteraccionItems : MonoBehaviour
 		{
 			case "Llave":
 				inside = true;
+				llave = obj.gameObject;
 				break;
 			case "Corazon":
 				PlayerStats ps = this.GetComponent<PlayerStats>();
@@ -68,7 +67,7 @@ public class InteraccionItems : MonoBehaviour
 		if (inside && Input.GetKeyDown(KeyCode.E))
 		{
 			Puerta.llaveCogida = true;
-			visible.enabled = false;
+			llave.SetActive(false);
 		}
 	}
     #endregion
