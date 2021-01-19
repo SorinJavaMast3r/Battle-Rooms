@@ -1980,7 +1980,7 @@ MonoBehaviour:
   attacksBeforeReload: 10
   attackCount: 0
   reloadState: {fileID: 11400012}
-  noTargetState: {fileID: 0}
+  noTargetState: {fileID: 11400032}
   animator: {fileID: 0}
   mecanimLayerIndex: 0
 --- !u!114 &11400018
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveId: -1
-  transitionState: {fileID: 0}
+  transitionState: {fileID: 11400032}
   parentTrigger: {fileID: 0}
   subTriggers: []
   ownsObjectFinder: 0
