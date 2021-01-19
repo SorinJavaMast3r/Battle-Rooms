@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.15376459, g: 0.19051756, b: 0.25215644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10102,6 +10102,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Puerta
       objectReference: {fileID: 0}
+    - target: {fileID: 2754122281947382774, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2764175681747048480, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -12458,6 +12462,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 8037363669721401376, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037363669721401376, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_Size.z
+      value: 3.0884297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037363669721401376, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_Center.z
+      value: 1.4389204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037363669721401376, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_Size.x
+      value: 5.458626
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037363669721401376, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+      propertyPath: m_Center.x
+      value: -0.33671188
+      objectReference: {fileID: 0}
     - target: {fileID: 8037752648757361918, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -14221,6 +14245,44 @@ Transform:
   m_Father: {fileID: 1382514}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &786517093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2754122281947382774, guid: 5e6b474cf79fa4a4a97cd608d311aa9d, type: 3}
+  m_PrefabInstance: {fileID: 627005681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &786517095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786517093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6e8ad83d335844691a067768c78761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeFinishPanel: 0
+  finishPanel: {fileID: 1541270818}
+--- !u!95 &786517096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786517093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 476682d119e9ee64dba61a69fcfeacb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &802435784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8753515607916847173, guid: 78f05eae8a339d64ea48cfe2f3a727aa, type: 3}
@@ -18799,10 +18861,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1402166802}
-        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
-        m_MethodName: Salir
-        m_Mode: 1
+      - m_Target: {fileID: 1541270818}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18811,10 +18873,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1541270818}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1402166802}
+        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
+        m_MethodName: CerrarAplicacion
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18856,7 +18918,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: Exit
 --- !u!222 &1010336790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35765,7 +35827,7 @@ GameObject:
   - component: {fileID: 1541270819}
   m_Layer: 5
   m_Name: Finish_Panel
-  m_TagString: GameOver
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35828,7 +35890,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1541270822
 RectTransform:

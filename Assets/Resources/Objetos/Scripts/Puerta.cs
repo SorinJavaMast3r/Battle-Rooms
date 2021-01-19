@@ -8,6 +8,9 @@ public class Puerta : MonoBehaviour
 	private bool areaPuerta;
 	private bool door;
 	public static bool llaveCogida;
+	public float timeFinishPanel;
+	public GameObject finishPanel;
+	private bool exit;
 
 	void Start()
 	{
@@ -34,11 +37,16 @@ public class Puerta : MonoBehaviour
 	{
 		if (areaPuerta && Input.GetKeyDown(KeyCode.E) && llaveCogida)
 		{
-			door = !door;
+			anim.SetBool("abierto", true);			
+
+			timeFinishPanel = Time.time + 1f;
+			exit = true;
+
+			Destroy(GameObject.FindGameObjectWithTag("Llave"));
 		}
-		if (door)
+		if (Time.time > timeFinishPanel && exit)
 		{
-			anim.SetBool("abierto", true);
+			finishPanel.SetActive(true);
 		}
 	}
 }

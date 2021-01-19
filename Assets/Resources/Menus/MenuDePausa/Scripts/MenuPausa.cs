@@ -26,4 +26,8 @@ public class MenuPausa : MonoBehaviour
         efectos.value = 0.5f;
         sonidoAmbiente.value = 0.5f;
     }
+    public void CerrarAplicacion()
+    {
+        Application.Quit();
+    }
 }
