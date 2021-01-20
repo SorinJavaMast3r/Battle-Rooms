@@ -2682,7 +2682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &131455360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5699,7 +5699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7331,7 +7331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16662,7 +16662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22583,7 +22583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24082,7 +24082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25221,7 +25221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37254,7 +37254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: objectFinder.tags.Array.data[0]
@@ -38987,7 +38987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: showDebugMessages
@@ -40834,7 +40834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41984,7 +41984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43558,7 +43558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863156, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: raycastLayers.m_Bits
-      value: 512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245081339478863162, guid: 0ee59f75416aee04abbdbb8b40173dd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45380,6 +45380,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 391947934}
+    - target: {fileID: 8615390290409868918, guid: 3660ea15398c6634f9ffc9d1fc849fa9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8615390290438658385, guid: 3660ea15398c6634f9ffc9d1fc849fa9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
